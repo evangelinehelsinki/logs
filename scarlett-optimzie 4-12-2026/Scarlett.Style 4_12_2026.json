@@ -1,0 +1,2830 @@
+{
+    "title": "Scarlett.Style 4/12/2026",
+    "steps": [
+        {
+            "type": "setViewport",
+            "width": 1432,
+            "height": 993,
+            "deviceScaleFactor": 1,
+            "isMobile": false,
+            "hasTouch": false,
+            "isLandscape": false
+        },
+        {
+            "type": "navigate",
+            "url": "https://scarlett.style/",
+            "assertedEvents": [
+                {
+                    "type": "navigation",
+                    "url": "https://scarlett.style/",
+                    "title": "Home — Scarlett"
+                }
+            ]
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "main > div"
+                ],
+                [
+                    "xpath//html/body/div/div[1]/main/div"
+                ],
+                [
+                    "pierce/main > div"
+                ]
+            ],
+            "offsetY": 538,
+            "offsetX": 244
+        },
+        {
+            "type": "keyDown",
+            "target": "main",
+            "key": "F5"
+        },
+        {
+            "type": "keyUp",
+            "key": "F5",
+            "target": "main",
+            "assertedEvents": [
+                {
+                    "type": "navigation",
+                    "url": "https://scarlett.style/discover",
+                    "title": "Discover — Scarlett"
+                }
+            ]
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "aria/Tell me what you're dressing for..."
+                ],
+                [
+                    "textarea"
+                ],
+                [
+                    "xpath//html/body/div/div[1]/main/div/div/div[4]/div/div/div[1]/textarea"
+                ],
+                [
+                    "pierce/textarea"
+                ]
+            ],
+            "offsetY": 34,
+            "offsetX": 126
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "div.mt-8 > div > div"
+                ],
+                [
+                    "xpath//html/body/div/div[1]/main/div/div/div[4]/div/div"
+                ],
+                [
+                    "pierce/div.mt-8 > div > div"
+                ],
+                [
+                    "text/My wardrobe Inspire me "
+                ]
+            ],
+            "offsetY": 134,
+            "offsetX": 163
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "div.mt-8 > div > div"
+                ],
+                [
+                    "xpath//html/body/div/div[1]/main/div/div/div[4]/div/div"
+                ],
+                [
+                    "pierce/div.mt-8 > div > div"
+                ],
+                [
+                    "text/My wardrobe Inspire me "
+                ]
+            ],
+            "offsetY": 151,
+            "offsetX": 166
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "aria/Inspire me"
+                ],
+                [
+                    "div.border-b button.text-ink-secondary"
+                ],
+                [
+                    "xpath//html/body/div/div[1]/main/div/div/div[4]/div/div[1]/div[2]/div/button[2]"
+                ],
+                [
+                    "pierce/div.border-b button.text-ink-secondary"
+                ],
+                [
+                    "text/Inspire me"
+                ]
+            ],
+            "offsetY": 3,
+            "offsetX": 42.46875
+        },
+        {
+            "type": "keyDown",
+            "target": "main",
+            "key": "Shift"
+        },
+        {
+            "type": "keyDown",
+            "target": "main",
+            "key": "S"
+        },
+        {
+            "type": "keyUp",
+            "key": "Shift",
+            "target": "main"
+        },
+        {
+            "type": "keyUp",
+            "key": "s",
+            "target": "main"
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "aria/Tell me what you're dressing for..."
+                ],
+                [
+                    "textarea"
+                ],
+                [
+                    "xpath//html/body/div/div[1]/main/div/div/div[4]/div/div/div[1]/textarea"
+                ],
+                [
+                    "pierce/textarea"
+                ]
+            ],
+            "offsetY": 32,
+            "offsetX": 169
+        },
+        {
+            "type": "change",
+            "value": "S",
+            "selectors": [
+                [
+                    "aria/Tell me what you're dressing for..."
+                ],
+                [
+                    "textarea"
+                ],
+                [
+                    "xpath//html/body/div/div[1]/main/div/div/div[4]/div/div/div[1]/textarea"
+                ],
+                [
+                    "pierce/textarea"
+                ]
+            ],
+            "target": "main"
+        },
+        {
+            "type": "keyUp",
+            "key": "s",
+            "target": "main"
+        },
+        {
+            "type": "change",
+            "value": "Something to wear to my college lectures, hoping for something that looks nice but not fully main character",
+            "selectors": [
+                [
+                    "aria/Tell me what you're dressing for..."
+                ],
+                [
+                    "textarea"
+                ],
+                [
+                    "xpath//html/body/div/div[1]/main/div/div/div[4]/div/div/div[1]/textarea"
+                ],
+                [
+                    "pierce/textarea"
+                ]
+            ],
+            "target": "main"
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "aria/Style me"
+                ],
+                [
+                    "div.mt-8 > div > div > button"
+                ],
+                [
+                    "xpath//html/body/div/div[1]/main/div/div/div[4]/div/div/button"
+                ],
+                [
+                    "pierce/div.mt-8 > div > div > button"
+                ],
+                [
+                    "text/Style me"
+                ]
+            ],
+            "offsetY": 30.0487060546875,
+            "offsetX": 66.79104614257812
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "aria/Surprise me"
+                ],
+                [
+                    "button:nth-of-type(5)"
+                ],
+                [
+                    "xpath//html/body/div/div[1]/main/div/div/div[4]/div[2]/div[1]/div/button[5]"
+                ],
+                [
+                    "pierce/button:nth-of-type(5)"
+                ],
+                [
+                    "text/Surprise me"
+                ]
+            ],
+            "offsetY": 20.40625,
+            "offsetX": 22.171875
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "aria/$100 - $200"
+                ],
+                [
+                    "div.gap-6 > div:nth-of-type(2) button:nth-of-type(3)"
+                ],
+                [
+                    "xpath//html/body/div/div[1]/main/div/div/div[4]/div[2]/div[2]/div/button[3]"
+                ],
+                [
+                    "pierce/div.gap-6 > div:nth-of-type(2) button:nth-of-type(3)"
+                ],
+                [
+                    "text/$100 - $200"
+                ]
+            ],
+            "offsetY": 2.40625,
+            "offsetX": 74.015625
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "button.sm\\:flex-1"
+                ],
+                [
+                    "xpath//html/body/div/div[1]/main/div/div/div[4]/div[3]/button[1]"
+                ],
+                [
+                    "pierce/button.sm\\:flex-1"
+                ]
+            ],
+            "offsetY": 41.40625,
+            "offsetX": 316
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "div.grid > div:nth-of-type(1) button.ml-auto"
+                ],
+                [
+                    "xpath//html/body/div/div[1]/main/div/div/div[4]/div[2]/div[1]/div[3]/button[2]"
+                ],
+                [
+                    "pierce/div.grid > div:nth-of-type(1) button.ml-auto"
+                ]
+            ],
+            "offsetY": 8.671875,
+            "offsetX": 34.140625
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "aria/Show details"
+                ],
+                [
+                    "div.grid > div:nth-of-type(2) button.ml-auto"
+                ],
+                [
+                    "xpath//html/body/div/div[1]/main/div/div/div[4]/div[2]/div[2]/div[3]/button[2]"
+                ],
+                [
+                    "pierce/div.grid > div:nth-of-type(2) button.ml-auto"
+                ],
+                [
+                    "text/Show details"
+                ]
+            ],
+            "offsetY": 7.671875,
+            "offsetX": 49.140625
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "div.grid > div:nth-of-type(1) > div.gap-3"
+                ],
+                [
+                    "xpath//html/body/div/div[1]/main/div/div/div[4]/div[2]/div[1]/div[2]"
+                ],
+                [
+                    "pierce/div.grid > div:nth-of-type(1) > div.gap-3"
+                ]
+            ],
+            "offsetY": 196.8125,
+            "offsetX": 140,
+            "duration": 447.20000000298023
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "aria/Discover"
+                ],
+                [
+                    "nav.hidden a:nth-of-type(2)"
+                ],
+                [
+                    "xpath//html/body/div/div[1]/nav[1]/div/div/div/a[2]"
+                ],
+                [
+                    "pierce/nav.hidden a:nth-of-type(2)"
+                ]
+            ],
+            "offsetY": 34,
+            "offsetX": 48.75
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "aria/Discovery item"
+                ],
+                [
+                    "img"
+                ],
+                [
+                    "xpath//html/body/div/div[1]/main/div/div/div/div[2]/div[3]/img"
+                ],
+                [
+                    "pierce/img"
+                ]
+            ],
+            "offsetY": 379.7413024902344,
+            "offsetX": 552.306640625,
+            "duration": 655.9000000059605
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "aria/Discovery item"
+                ],
+                [
+                    "img"
+                ],
+                [
+                    "xpath//html/body/div/div[1]/main/div/div/div/div[2]/div[3]/img"
+                ],
+                [
+                    "pierce/img"
+                ]
+            ],
+            "offsetY": 334.11773681640625,
+            "offsetX": 459.08587646484375
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "aria/Discovery item"
+                ],
+                [
+                    "img"
+                ],
+                [
+                    "xpath//html/body/div/div[1]/main/div/div/div/div[2]/div[3]/img"
+                ],
+                [
+                    "pierce/img"
+                ]
+            ],
+            "offsetY": 270.40625,
+            "offsetX": 213
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "aria/Discovery item"
+                ],
+                [
+                    "img"
+                ],
+                [
+                    "xpath//html/body/div/div[1]/main/div/div/div/div[2]/div[3]/img"
+                ],
+                [
+                    "pierce/img"
+                ]
+            ],
+            "offsetY": 283.4968566894531,
+            "offsetX": 225.67196655273438
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "aria/Discovery item"
+                ],
+                [
+                    "img"
+                ],
+                [
+                    "xpath//html/body/div/div[1]/main/div/div/div/div[2]/div[3]/img"
+                ],
+                [
+                    "pierce/img"
+                ]
+            ],
+            "offsetY": 357.56634521484375,
+            "offsetX": 226.58169555664062
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "aria/Discovery item"
+                ],
+                [
+                    "img"
+                ],
+                [
+                    "xpath//html/body/div/div[1]/main/div/div/div/div[2]/div[3]/img"
+                ],
+                [
+                    "pierce/img"
+                ]
+            ],
+            "offsetY": 334.98846435546875,
+            "offsetX": 166.00997924804688
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "aria/Discovery item"
+                ],
+                [
+                    "img"
+                ],
+                [
+                    "xpath//html/body/div/div[1]/main/div/div/div/div[2]/div[3]/img"
+                ],
+                [
+                    "pierce/img"
+                ]
+            ],
+            "offsetY": 462.418701171875,
+            "offsetX": 168.60427856445312
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "aria/Discovery item"
+                ],
+                [
+                    "img"
+                ],
+                [
+                    "xpath//html/body/div/div[1]/main/div/div/div/div[2]/div[3]/img"
+                ],
+                [
+                    "pierce/img"
+                ]
+            ],
+            "offsetY": 543.7418823242188,
+            "offsetX": 136.81622314453125
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "aria/Swipe card",
+                    "aria/[role=\"paragraph\"]"
+                ],
+                [
+                    "div.relative > div.relative p"
+                ],
+                [
+                    "xpath//html/body/div/div[1]/main/div/div/div/div[2]/div[3]/div/p"
+                ],
+                [
+                    "pierce/div.relative > div.relative p"
+                ]
+            ],
+            "offsetY": 38.6754150390625,
+            "offsetX": 87.63238525390625
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "aria/Discovery item"
+                ],
+                [
+                    "img"
+                ],
+                [
+                    "xpath//html/body/div/div[1]/main/div/div/div/div[2]/div[3]/img"
+                ],
+                [
+                    "pierce/img"
+                ]
+            ],
+            "offsetY": 576.3844451904297,
+            "offsetX": 147.42745971679688
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "aria/Discovery item"
+                ],
+                [
+                    "img"
+                ],
+                [
+                    "xpath//html/body/div/div[1]/main/div/div/div/div[2]/div[3]/img"
+                ],
+                [
+                    "pierce/img"
+                ]
+            ],
+            "offsetY": 534.7948150634766,
+            "offsetX": 294.3175048828125
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "aria/Discovery item"
+                ],
+                [
+                    "img"
+                ],
+                [
+                    "xpath//html/body/div/div[1]/main/div/div/div/div[2]/div[3]/img"
+                ],
+                [
+                    "pierce/img"
+                ]
+            ],
+            "offsetY": 543.2616424560547,
+            "offsetX": 510.9261474609375
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "aria/Discovery item"
+                ],
+                [
+                    "img"
+                ],
+                [
+                    "xpath//html/body/div/div[1]/main/div/div/div/div[2]/div[3]/img"
+                ],
+                [
+                    "pierce/img"
+                ]
+            ],
+            "offsetY": 451.2759094238281,
+            "offsetX": 149.7904052734375
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "aria/Discovery item"
+                ],
+                [
+                    "img"
+                ],
+                [
+                    "xpath//html/body/div/div[1]/main/div/div/div/div[2]/div[3]/img"
+                ],
+                [
+                    "pierce/img"
+                ]
+            ],
+            "offsetY": 561.40625,
+            "offsetX": 176
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "aria/Discovery item"
+                ],
+                [
+                    "img"
+                ],
+                [
+                    "xpath//html/body/div/div[1]/main/div/div/div/div[2]/div[3]/img"
+                ],
+                [
+                    "pierce/img"
+                ]
+            ],
+            "offsetY": 609.2331085205078,
+            "offsetX": 328.1700439453125,
+            "duration": 893.9000000059605
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "aria/Discovery item"
+                ],
+                [
+                    "img"
+                ],
+                [
+                    "xpath//html/body/div/div[1]/main/div/div/div/div[2]/div[3]/img"
+                ],
+                [
+                    "pierce/img"
+                ]
+            ],
+            "offsetY": 594.8276062011719,
+            "offsetX": 419.68682861328125
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "aria/Discovery item"
+                ],
+                [
+                    "img"
+                ],
+                [
+                    "xpath//html/body/div/div[1]/main/div/div/div/div[2]/div[3]/img"
+                ],
+                [
+                    "pierce/img"
+                ]
+            ],
+            "offsetY": 510.2567443847656,
+            "offsetX": 153.62484741210938
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "aria/Swipe card"
+                ],
+                [
+                    "div.relative > div.relative"
+                ],
+                [
+                    "xpath//html/body/div/div[1]/main/div/div/div/div[2]/div[3]"
+                ],
+                [
+                    "pierce/div.relative > div.relative"
+                ]
+            ],
+            "offsetY": 643.2388305664062,
+            "offsetX": 197.04864501953125
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "aria/Swipe card"
+                ],
+                [
+                    "div.relative > div.relative"
+                ],
+                [
+                    "xpath//html/body/div/div[1]/main/div/div/div/div[2]/div[3]"
+                ],
+                [
+                    "pierce/div.relative > div.relative"
+                ]
+            ],
+            "offsetY": 634.1839904785156,
+            "offsetX": 144.14370727539062
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "aria/Discovery item"
+                ],
+                [
+                    "img"
+                ],
+                [
+                    "xpath//html/body/div/div[1]/main/div/div/div/div[2]/div[3]/img"
+                ],
+                [
+                    "pierce/img"
+                ]
+            ],
+            "offsetY": 572.40625,
+            "offsetX": 11,
+            "duration": 493
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "aria/Swipe card"
+                ],
+                [
+                    "div.relative > div.relative"
+                ],
+                [
+                    "xpath//html/body/div/div[1]/main/div/div/div/div[2]/div[3]"
+                ],
+                [
+                    "pierce/div.relative > div.relative"
+                ]
+            ],
+            "offsetY": 679.1849136352539,
+            "offsetX": 323.9468994140625
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "aria/Swipe card",
+                    "aria/[role=\"generic\"]"
+                ],
+                [
+                    "div.relative > div.relative > div"
+                ],
+                [
+                    "xpath//html/body/div/div[1]/main/div/div/div/div[2]/div[3]/div"
+                ],
+                [
+                    "pierce/div.relative > div.relative > div"
+                ]
+            ],
+            "offsetY": 24.68328857421875,
+            "offsetX": 154.76620483398438
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "aria/Swipe card",
+                    "aria/[role=\"generic\"]"
+                ],
+                [
+                    "div.relative > div.relative > div"
+                ],
+                [
+                    "xpath//html/body/div/div[1]/main/div/div/div/div[2]/div[3]/div"
+                ],
+                [
+                    "pierce/div.relative > div.relative > div"
+                ]
+            ],
+            "offsetY": 9.65606689453125,
+            "offsetX": 354.78411865234375,
+            "duration": 957.1999999880791
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "aria/Discovery item"
+                ],
+                [
+                    "img"
+                ],
+                [
+                    "xpath//html/body/div/div[1]/main/div/div/div/div[2]/div[3]/img"
+                ],
+                [
+                    "pierce/img"
+                ]
+            ],
+            "offsetY": 534.40625,
+            "offsetX": 329
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "aria/Discovery item"
+                ],
+                [
+                    "img"
+                ],
+                [
+                    "xpath//html/body/div/div[1]/main/div/div/div/div[2]/div[3]/img"
+                ],
+                [
+                    "pierce/img"
+                ]
+            ],
+            "offsetY": 390.62701416015625,
+            "offsetX": 298.02313232421875
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "aria/Discovery item"
+                ],
+                [
+                    "img"
+                ],
+                [
+                    "xpath//html/body/div/div[1]/main/div/div/div/div[2]/div[3]/img"
+                ],
+                [
+                    "pierce/img"
+                ]
+            ],
+            "offsetY": 513.1498413085938,
+            "offsetX": 381.64459228515625
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "aria/Discovery item"
+                ],
+                [
+                    "img"
+                ],
+                [
+                    "xpath//html/body/div/div[1]/main/div/div/div/div[2]/div[3]/img"
+                ],
+                [
+                    "pierce/img"
+                ]
+            ],
+            "offsetY": 411.3118896484375,
+            "offsetX": 360.0738220214844,
+            "duration": 1281.9000000059605
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "aria/Discovery item"
+                ],
+                [
+                    "img"
+                ],
+                [
+                    "xpath//html/body/div/div[1]/main/div/div/div/div[2]/div[3]/img"
+                ],
+                [
+                    "pierce/img"
+                ]
+            ],
+            "offsetY": 427.1362762451172,
+            "offsetX": 377.91387939453125,
+            "duration": 502.90000000596046
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "aria/Discovery item"
+                ],
+                [
+                    "img"
+                ],
+                [
+                    "xpath//html/body/div/div[1]/main/div/div/div/div[2]/div[3]/img"
+                ],
+                [
+                    "pierce/img"
+                ]
+            ],
+            "offsetY": 388.9773864746094,
+            "offsetX": 519.0868530273438
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "main > div > div"
+                ],
+                [
+                    "xpath//html/body/div/div[1]/main/div/div"
+                ],
+                [
+                    "pierce/main > div > div"
+                ]
+            ],
+            "offsetY": 485,
+            "offsetX": 743,
+            "duration": 1154
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "aria/Discovery item"
+                ],
+                [
+                    "img"
+                ],
+                [
+                    "xpath//html/body/div/div[1]/main/div/div/div/div[2]/div[3]/img"
+                ],
+                [
+                    "pierce/img"
+                ]
+            ],
+            "offsetY": 365.40625,
+            "offsetX": 277
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "aria/Discovery item"
+                ],
+                [
+                    "img"
+                ],
+                [
+                    "xpath//html/body/div/div[1]/main/div/div/div/div[2]/div[3]/img"
+                ],
+                [
+                    "pierce/img"
+                ]
+            ],
+            "offsetY": 391.124755859375,
+            "offsetX": 294.81903076171875
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "aria/Closet"
+                ],
+                [
+                    "nav.hidden a:nth-of-type(3)"
+                ],
+                [
+                    "xpath//html/body/div/div[1]/nav[1]/div/div/div/a[3]"
+                ],
+                [
+                    "pierce/nav.hidden a:nth-of-type(3)"
+                ]
+            ],
+            "offsetY": 42,
+            "offsetX": 19.515625
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "aria/Upload Outfit"
+                ],
+                [
+                    "a.bg-ink"
+                ],
+                [
+                    "xpath//html/body/div/div[1]/main/div/div[2]/div/div[1]/div[2]/a[1]"
+                ],
+                [
+                    "pierce/a.bg-ink"
+                ],
+                [
+                    "text/Upload Outfit"
+                ]
+            ],
+            "offsetY": 12.48406982421875,
+            "offsetX": 72.61126708984375
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "label"
+                ],
+                [
+                    "xpath//html/body/div/div[1]/main/div/div/div/div[2]/div/label"
+                ],
+                [
+                    "pierce/label"
+                ],
+                [
+                    "text/Select Photo"
+                ]
+            ],
+            "offsetY": 14.0462646484375,
+            "offsetX": 18.4351806640625
+        },
+        {
+            "type": "change",
+            "value": "C:\\fakepath\\IMG_3379.jpg",
+            "selectors": [
+                [
+                    "input"
+                ],
+                [
+                    "xpath//html/body/div/div[1]/main/div/div/div/div[2]/div/label/input"
+                ],
+                [
+                    "pierce/input"
+                ]
+            ],
+            "target": "main"
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "div.p-4 div"
+                ],
+                [
+                    "xpath//html/body/div/div[1]/main/div/div/div/div[2]/div/div[3]/label/div"
+                ],
+                [
+                    "pierce/div.p-4 div"
+                ]
+            ],
+            "offsetY": 23.40625,
+            "offsetX": 210
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "aria/Analyze Outfit"
+                ],
+                [
+                    "div.max-w-2xl > div > button"
+                ],
+                [
+                    "xpath//html/body/div/div[1]/main/div/div/div/div[2]/div/button"
+                ],
+                [
+                    "pierce/div.max-w-2xl > div > button"
+                ],
+                [
+                    "text/Analyze Outfit"
+                ]
+            ],
+            "offsetY": 32.31658935546875,
+            "offsetX": 312.2799987792969
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "main > div > div > div"
+                ],
+                [
+                    "xpath//html/body/div/div[1]/main/div/div/div"
+                ],
+                [
+                    "pierce/main > div > div > div"
+                ]
+            ],
+            "offsetY": 263,
+            "offsetX": 118,
+            "duration": 1036.1000000089407
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "aria/View All Outfits"
+                ],
+                [
+                    "div.space-y-6 a"
+                ],
+                [
+                    "xpath//html/body/div/div[1]/main/div/div/div/div[2]/div[3]/a"
+                ],
+                [
+                    "pierce/div.space-y-6 a"
+                ],
+                [
+                    "text/View All Outfits"
+                ]
+            ],
+            "offsetY": 22.4375,
+            "offsetX": 652
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "aria/Preppy Anime-Inspired Mall Look"
+                ],
+                [
+                    "div.grid-container > div:nth-of-type(1) img"
+                ],
+                [
+                    "xpath//html/body/div/div[1]/main/div/div[2]/div/div[3]/div[1]/div/img"
+                ],
+                [
+                    "pierce/div.grid-container > div:nth-of-type(1) img"
+                ]
+            ],
+            "offsetY": 220.48184204101562,
+            "offsetX": 200.07559204101562
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "aria/Preppy Anime-Inspired Mall Look"
+                ],
+                [
+                    "img"
+                ],
+                [
+                    "xpath//html/body/div/div[1]/main/div/div[2]/div/div/div[2]/div[2]/div[1]/picture/img"
+                ],
+                [
+                    "pierce/img"
+                ]
+            ],
+            "offsetY": 10.21875,
+            "offsetX": 78
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "aria/← Back to Outfits"
+                ],
+                [
+                    "main > div > div.min-h-screen a"
+                ],
+                [
+                    "xpath//html/body/div/div[1]/main/div/div[2]/div/div/div[1]/a"
+                ],
+                [
+                    "pierce/main > div > div.min-h-screen a"
+                ],
+                [
+                    "text/← Back to Outfits"
+                ]
+            ],
+            "offsetY": 13,
+            "offsetX": 55
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "aria/Batch Upload"
+                ],
+                [
+                    "a.bg-surface-raised"
+                ],
+                [
+                    "xpath//html/body/div/div[1]/main/div/div[2]/div/div[1]/div[2]/a[2]"
+                ],
+                [
+                    "pierce/a.bg-surface-raised"
+                ],
+                [
+                    "text/Batch Upload"
+                ]
+            ],
+            "offsetY": 12.50909423828125,
+            "offsetX": 92.2039794921875
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "label"
+                ],
+                [
+                    "xpath//html/body/div/div[1]/main/div/div/div/div[2]/label"
+                ],
+                [
+                    "pierce/label"
+                ],
+                [
+                    "text/Browse Files"
+                ]
+            ],
+            "offsetY": 34.910308837890625,
+            "offsetX": 100.16204833984375
+        },
+        {
+            "type": "change",
+            "value": "C:\\fakepath\\IMG_3378.jpg",
+            "selectors": [
+                [
+                    "#file-input"
+                ],
+                [
+                    "xpath///*[@id=\"file-input\"]"
+                ],
+                [
+                    "pierce/#file-input"
+                ]
+            ],
+            "target": "main"
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "aria/Analyze All (5)"
+                ],
+                [
+                    "div.shadow-card > button"
+                ],
+                [
+                    "xpath//html/body/div/div[1]/main/div/div/div/div[3]/button"
+                ],
+                [
+                    "pierce/div.shadow-card > button"
+                ]
+            ],
+            "offsetY": 48.1708984375,
+            "offsetX": 383.49798583984375
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "main > div > div"
+                ],
+                [
+                    "xpath//html/body/div/div[1]/main/div/div"
+                ],
+                [
+                    "pierce/main > div > div"
+                ]
+            ],
+            "offsetY": 502,
+            "offsetX": 57,
+            "duration": 751
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "main > div > div"
+                ],
+                [
+                    "xpath//html/body/div/div[1]/main/div/div"
+                ],
+                [
+                    "pierce/main > div > div"
+                ]
+            ],
+            "offsetY": 536,
+            "offsetX": 97
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "aria/View All Outfits"
+                ],
+                [
+                    "div.space-y-6 a"
+                ],
+                [
+                    "xpath//html/body/div/div[1]/main/div/div/div/div[2]/div[2]/a"
+                ],
+                [
+                    "pierce/div.space-y-6 a"
+                ],
+                [
+                    "text/View All Outfits"
+                ]
+            ],
+            "offsetY": 15.300018310546875,
+            "offsetX": 208.367919921875
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "aria/Insights"
+                ],
+                [
+                    "main a.text-ink-tertiary"
+                ],
+                [
+                    "xpath//html/body/div/div[1]/main/div/div[1]/div/div/a[2]"
+                ],
+                [
+                    "pierce/main a.text-ink-tertiary"
+                ],
+                [
+                    "text/Insights"
+                ]
+            ],
+            "offsetY": 14,
+            "offsetX": 38.3125
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "aria/Outfits"
+                ],
+                [
+                    "main a.text-ink-tertiary"
+                ],
+                [
+                    "xpath//html/body/div/div[1]/main/div/div[1]/div/div/a[1]"
+                ],
+                [
+                    "pierce/main a.text-ink-tertiary"
+                ],
+                [
+                    "text/Outfits"
+                ]
+            ],
+            "offsetY": 9,
+            "offsetX": 34
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "div.min-h-screen div.min-h-screen"
+                ],
+                [
+                    "xpath//html/body/div/div[1]/main/div/div[2]"
+                ],
+                [
+                    "pierce/div.min-h-screen div.min-h-screen"
+                ]
+            ],
+            "offsetY": 29,
+            "offsetX": 90,
+            "duration": 765.8999999910593
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "div.min-h-screen > div > div.items-center"
+                ],
+                [
+                    "xpath//html/body/div/div[1]/main/div/div[2]/div/div[1]"
+                ],
+                [
+                    "pierce/div.min-h-screen > div > div.items-center"
+                ],
+                [
+                    "text/My Outfits  Upload"
+                ]
+            ],
+            "offsetY": 33,
+            "offsetX": 170,
+            "duration": 1187.9000000059605
+        },
+        {
+            "type": "doubleClick",
+            "target": "main",
+            "selectors": [
+                [
+                    "div.min-h-screen > div > div.items-center"
+                ],
+                [
+                    "xpath//html/body/div/div[1]/main/div/div[2]/div/div[1]"
+                ],
+                [
+                    "pierce/div.min-h-screen > div > div.items-center"
+                ],
+                [
+                    "text/My Outfits  Upload"
+                ]
+            ],
+            "offsetY": 33,
+            "offsetX": 7
+        },
+        {
+            "type": "doubleClick",
+            "target": "main",
+            "selectors": [
+                [
+                    "aria/My Outfits"
+                ],
+                [
+                    "h1"
+                ],
+                [
+                    "xpath//html/body/div/div[1]/main/div/div[2]/div/div[1]/div[1]/h1"
+                ],
+                [
+                    "pierce/h1"
+                ]
+            ],
+            "offsetY": 36,
+            "offsetX": 169
+        },
+        {
+            "type": "doubleClick",
+            "target": "main",
+            "selectors": [
+                [
+                    "div.min-h-screen > div > div.items-center"
+                ],
+                [
+                    "xpath//html/body/div/div[1]/main/div/div[2]/div/div[1]"
+                ],
+                [
+                    "pierce/div.min-h-screen > div > div.items-center"
+                ],
+                [
+                    "text/My Outfits  Upload"
+                ]
+            ],
+            "offsetY": 32,
+            "offsetX": 15
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "aria/My Outfits"
+                ],
+                [
+                    "h1"
+                ],
+                [
+                    "xpath//html/body/div/div[1]/main/div/div[2]/div/div[1]/div[1]/h1"
+                ],
+                [
+                    "pierce/h1"
+                ]
+            ],
+            "offsetY": 30.203125,
+            "offsetX": 14
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "aria/My Outfits"
+                ],
+                [
+                    "h1"
+                ],
+                [
+                    "xpath//html/body/div/div[1]/main/div/div[2]/div/div[1]/div[1]/h1"
+                ],
+                [
+                    "pierce/h1"
+                ]
+            ],
+            "offsetY": 31.203125,
+            "offsetX": 26
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "div.min-h-screen > div > div.items-center"
+                ],
+                [
+                    "xpath//html/body/div/div[1]/main/div/div[2]/div/div[1]"
+                ],
+                [
+                    "pierce/div.min-h-screen > div > div.items-center"
+                ],
+                [
+                    "text/My Outfits  Upload"
+                ]
+            ],
+            "offsetY": 31,
+            "offsetX": 170,
+            "duration": 898
+        },
+        {
+            "type": "doubleClick",
+            "target": "main",
+            "selectors": [
+                [
+                    "div.min-h-screen > div > div.items-center"
+                ],
+                [
+                    "xpath//html/body/div/div[1]/main/div/div[2]/div/div[1]"
+                ],
+                [
+                    "pierce/div.min-h-screen > div > div.items-center"
+                ],
+                [
+                    "text/My Outfits  Upload"
+                ]
+            ],
+            "offsetY": 33,
+            "offsetX": 13
+        },
+        {
+            "type": "doubleClick",
+            "target": "main",
+            "selectors": [
+                [
+                    "aria/My Outfits"
+                ],
+                [
+                    "h1"
+                ],
+                [
+                    "xpath//html/body/div/div[1]/main/div/div[2]/div/div[1]/div[1]/h1"
+                ],
+                [
+                    "pierce/h1"
+                ]
+            ],
+            "offsetY": 26.203125,
+            "offsetX": 132
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "aria/My Outfits"
+                ],
+                [
+                    "h1"
+                ],
+                [
+                    "xpath//html/body/div/div[1]/main/div/div[2]/div/div[1]/div[1]/h1"
+                ],
+                [
+                    "pierce/h1"
+                ]
+            ],
+            "offsetY": 26.203125,
+            "offsetX": 132
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "div.min-h-screen div.min-h-screen"
+                ],
+                [
+                    "xpath//html/body/div/div[1]/main/div/div[2]"
+                ],
+                [
+                    "pierce/div.min-h-screen div.min-h-screen"
+                ]
+            ],
+            "offsetY": 64,
+            "offsetX": 129,
+            "duration": 946.3000000119209
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "div.min-h-screen div.min-h-screen"
+                ],
+                [
+                    "xpath//html/body/div/div[1]/main/div/div[2]"
+                ],
+                [
+                    "pierce/div.min-h-screen div.min-h-screen"
+                ]
+            ],
+            "offsetY": 64,
+            "offsetX": 128
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "div.min-h-screen"
+                ],
+                [
+                    "xpath//html/body/div/div[1]"
+                ],
+                [
+                    "pierce/div.min-h-screen"
+                ]
+            ],
+            "offsetY": 571,
+            "offsetX": 1055
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "aria/Preppy Anime-Inspired Mall Look"
+                ],
+                [
+                    "div:nth-of-type(6) img"
+                ],
+                [
+                    "xpath//html/body/div/div[1]/main/div/div[2]/div/div[3]/div[6]/div/img"
+                ],
+                [
+                    "pierce/div:nth-of-type(6) img"
+                ]
+            ],
+            "offsetY": 133.4818115234375,
+            "offsetX": 98.07559204101562
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "aria/← Back to Outfits"
+                ],
+                [
+                    "main > div > div.min-h-screen a"
+                ],
+                [
+                    "xpath//html/body/div/div[1]/main/div/div[2]/div/div/div[1]/a"
+                ],
+                [
+                    "pierce/main > div > div.min-h-screen a"
+                ],
+                [
+                    "text/← Back to Outfits"
+                ]
+            ],
+            "offsetY": 14,
+            "offsetX": 52
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "aria/Edgy Urban Crop & Denim"
+                ],
+                [
+                    "div.grid-container > div:nth-of-type(1) img"
+                ],
+                [
+                    "xpath//html/body/div/div[1]/main/div/div[2]/div/div[3]/div[1]/div/img"
+                ],
+                [
+                    "pierce/div.grid-container > div:nth-of-type(1) img"
+                ]
+            ],
+            "offsetY": 216.87518310546875,
+            "offsetX": 210.4689178466797
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "aria/Edgy Urban Crop & Denim"
+                ],
+                [
+                    "img"
+                ],
+                [
+                    "xpath//html/body/div/div[1]/main/div/div[2]/div/div/div[2]/div[2]/div[1]/picture/img"
+                ],
+                [
+                    "pierce/img"
+                ]
+            ],
+            "offsetY": 265.8125,
+            "offsetX": 85,
+            "button": "back"
+        },
+        {
+            "type": "navigate",
+            "url": "https://scarlett.style/closet/outfits",
+            "assertedEvents": [
+                {
+                    "type": "navigation",
+                    "url": "https://scarlett.style/closet/outfits",
+                    "title": "My Outfits — Scarlett"
+                }
+            ]
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "aria/Preppy Anime-Inspired Mall Look"
+                ],
+                [
+                    "div:nth-of-type(6) img"
+                ],
+                [
+                    "xpath//html/body/div/div[1]/main/div/div[2]/div/div[3]/div[6]/div/img"
+                ],
+                [
+                    "pierce/div:nth-of-type(6) img"
+                ]
+            ],
+            "offsetY": 98.4818115234375,
+            "offsetX": 188.07559204101562
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "div.w-\\[45\\%\\] > div:nth-of-type(1) > div button"
+                ],
+                [
+                    "xpath//html/body/div/div[1]/main/div/div[2]/div/div/div[2]/div[2]/div[2]/div[1]/div/div[5]/button"
+                ],
+                [
+                    "pierce/div.w-\\[45\\%\\] > div:nth-of-type(1) > div button"
+                ]
+            ],
+            "offsetY": 28.8587646484375,
+            "offsetX": 227.40435791015625
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "aria/Coolmee Women Crop Cami Tops Corset Faux Leather Spaghetti Straps Going Out Party Cropped Bustier Tank Tops L Black"
+                ],
+                [
+                    "div.flex-1 > div > div.flex > div:nth-of-type(2) img"
+                ],
+                [
+                    "xpath//html/body/div/div[1]/main/div/div[2]/div/div/div[2]/div[2]/div[2]/div[2]/div/div[3]/div/div[2]/div[2]/div/img"
+                ],
+                [
+                    "pierce/div.flex-1 > div > div.flex > div:nth-of-type(2) img"
+                ]
+            ],
+            "offsetY": 152.796875,
+            "offsetX": 90
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "aria/Moments Of Couture Bustier Top - Black"
+                ],
+                [
+                    "div.flex-1 > div > div.flex > div:nth-of-type(3) img"
+                ],
+                [
+                    "xpath//html/body/div/div[1]/main/div/div[2]/div/div/div[2]/div[2]/div[2]/div[2]/div/div[3]/div/div[2]/div[3]/div/img"
+                ],
+                [
+                    "pierce/div.flex-1 > div > div.flex > div:nth-of-type(3) img"
+                ]
+            ],
+            "offsetY": 151.796875,
+            "offsetX": 97
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "aria/KITTIE 2.0 BUSTIER - BLACK"
+                ],
+                [
+                    "div:nth-of-type(4) img"
+                ],
+                [
+                    "xpath//html/body/div/div[1]/main/div/div[2]/div/div/div[2]/div[2]/div[2]/div[2]/div/div[3]/div/div[2]/div[4]/div/img"
+                ],
+                [
+                    "pierce/div:nth-of-type(4) img"
+                ]
+            ],
+            "offsetY": 138.796875,
+            "offsetX": 90
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "aria/Black Sexy PU Leather Bustier Crop Top For Women / Punk Short Sleevees Top"
+                ],
+                [
+                    "div:nth-of-type(5) img"
+                ],
+                [
+                    "xpath//html/body/div/div[1]/main/div/div[2]/div/div/div[2]/div[2]/div[2]/div[2]/div/div[3]/div/div[2]/div[5]/div/img"
+                ],
+                [
+                    "pierce/div:nth-of-type(5) img"
+                ]
+            ],
+            "offsetY": 134.796875,
+            "offsetX": 105
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "aria/Close"
+                ],
+                [
+                    "div.justify-between > button"
+                ],
+                [
+                    "xpath//html/body/div/div[1]/main/div/div[2]/div/div/div[2]/div[2]/div[2]/div[2]/div/div[2]/button"
+                ],
+                [
+                    "pierce/div.justify-between > button"
+                ]
+            ],
+            "offsetY": 4.796875,
+            "offsetX": 17
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "aria/Shop"
+                ],
+                [
+                    "nav.hidden a:nth-of-type(4)"
+                ],
+                [
+                    "xpath//html/body/div/div[1]/nav[1]/div/div/div/a[4]"
+                ],
+                [
+                    "pierce/nav.hidden a:nth-of-type(4)"
+                ]
+            ],
+            "offsetY": 33,
+            "offsetX": 29.953125
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "aria/Search"
+                ],
+                [
+                    "#query"
+                ],
+                [
+                    "xpath///*[@id=\"query\"]"
+                ],
+                [
+                    "pierce/#query"
+                ]
+            ],
+            "offsetY": 40,
+            "offsetX": 560
+        },
+        {
+            "type": "change",
+            "value": "bathrobe",
+            "selectors": [
+                [
+                    "aria/Search"
+                ],
+                [
+                    "#query"
+                ],
+                [
+                    "xpath///*[@id=\"query\"]"
+                ],
+                [
+                    "pierce/#query"
+                ]
+            ],
+            "target": "main"
+        },
+        {
+            "type": "keyDown",
+            "target": "main",
+            "key": "Enter"
+        },
+        {
+            "type": "keyUp",
+            "key": "Enter",
+            "target": "main"
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "aria/Stylist"
+                ],
+                [
+                    "nav.hidden a:nth-of-type(5)"
+                ],
+                [
+                    "xpath//html/body/div/div[1]/nav[1]/div/div/div/a[5]"
+                ],
+                [
+                    "pierce/nav.hidden a:nth-of-type(5)"
+                ]
+            ],
+            "offsetY": 38,
+            "offsetX": 6.203125
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "aria/A date on Friday, something edgy for work, what to do with that green jacket..."
+                ],
+                [
+                    "textarea"
+                ],
+                [
+                    "xpath//html/body/div/div[1]/main/div/div/div[2]/div/div/div[2]/textarea"
+                ],
+                [
+                    "pierce/textarea"
+                ]
+            ],
+            "offsetY": 23.5,
+            "offsetX": 208.5
+        },
+        {
+            "type": "change",
+            "value": "Re",
+            "selectors": [
+                [
+                    "aria/A date on Friday, something edgy for work, what to do with that green jacket..."
+                ],
+                [
+                    "textarea"
+                ],
+                [
+                    "xpath//html/body/div/div[1]/main/div/div/div[2]/div/div/div[2]/textarea"
+                ],
+                [
+                    "pierce/textarea"
+                ]
+            ],
+            "target": "main"
+        },
+        {
+            "type": "keyUp",
+            "key": "r",
+            "target": "main"
+        },
+        {
+            "type": "change",
+            "value": "Realized I should probably get a bathrobe before ",
+            "selectors": [
+                [
+                    "aria/A date on Friday, something edgy for work, what to do with that green jacket..."
+                ],
+                [
+                    "textarea"
+                ],
+                [
+                    "xpath//html/body/div/div[1]/main/div/div/div[2]/div/div/div[2]/textarea"
+                ],
+                [
+                    "pierce/textarea"
+                ]
+            ],
+            "target": "main"
+        },
+        {
+            "type": "keyDown",
+            "target": "main",
+            "key": "Shift"
+        },
+        {
+            "type": "keyUp",
+            "key": "E",
+            "target": "main"
+        },
+        {
+            "type": "change",
+            "value": "Realized I should probably get a bathrobe before I",
+            "selectors": [
+                [
+                    "aria/A date on Friday, something edgy for work, what to do with that green jacket..."
+                ],
+                [
+                    "textarea"
+                ],
+                [
+                    "xpath//html/body/div/div[1]/main/div/div/div[2]/div/div/div[2]/textarea"
+                ],
+                [
+                    "pierce/textarea"
+                ]
+            ],
+            "target": "main"
+        },
+        {
+            "type": "keyUp",
+            "key": "Shift",
+            "target": "main"
+        },
+        {
+            "type": "change",
+            "value": "Realized I should probably get a bathrobe before I head off to college to replace my old one, have any suggestions?",
+            "selectors": [
+                [
+                    "aria/A date on Friday, something edgy for work, what to do with that green jacket..."
+                ],
+                [
+                    "textarea"
+                ],
+                [
+                    "xpath//html/body/div/div[1]/main/div/div/div[2]/div/div/div[2]/textarea"
+                ],
+                [
+                    "pierce/textarea"
+                ]
+            ],
+            "target": "main"
+        },
+        {
+            "type": "keyUp",
+            "key": "/",
+            "target": "main"
+        },
+        {
+            "type": "keyDown",
+            "target": "main",
+            "key": "Enter"
+        },
+        {
+            "type": "keyUp",
+            "key": "Enter",
+            "target": "main"
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "aria/Styleboard"
+                ],
+                [
+                    "nav.hidden a:nth-of-type(6)"
+                ],
+                [
+                    "xpath//html/body/div/div[1]/nav[1]/div/div/div/a[6]"
+                ],
+                [
+                    "pierce/nav.hidden a:nth-of-type(6)"
+                ]
+            ],
+            "offsetY": 36,
+            "offsetX": 22.421875
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "aria/Edgy Urban Crop & Denim[role=\"image\"]"
+                ],
+                [
+                    "button:nth-of-type(1) > img"
+                ],
+                [
+                    "xpath//html/body/div/div[1]/main/div/div/div[3]/aside/div/div/button[1]/img"
+                ],
+                [
+                    "pierce/button:nth-of-type(1) > img"
+                ]
+            ],
+            "offsetY": 55.625,
+            "offsetX": 38
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "aria/Preppy Anime-Inspired Mall Look[role=\"image\"]"
+                ],
+                [
+                    "button:nth-of-type(6) > img"
+                ],
+                [
+                    "xpath//html/body/div/div[1]/main/div/div/div[3]/aside/div/div/button[6]/img"
+                ],
+                [
+                    "pierce/button:nth-of-type(6) > img"
+                ]
+            ],
+            "offsetY": 42.96875,
+            "offsetX": 39
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "div:nth-of-type(2) > div.tray-pieces > button:nth-of-type(1) > span"
+                ],
+                [
+                    "xpath//html/body/div/div[1]/main/div/div/div[3]/div/div[2]/div[2]/div[2]/button[1]/span"
+                ],
+                [
+                    "pierce/div:nth-of-type(2) > div.tray-pieces > button:nth-of-type(1) > span"
+                ],
+                [
+                    "text/Leopard Print"
+                ]
+            ],
+            "offsetY": 0.796875,
+            "offsetX": 56
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "canvas.upper-canvas"
+                ],
+                [
+                    "xpath//html/body/div/div[1]/main/div/div/div[3]/div/div[1]/div/canvas[2]"
+                ],
+                [
+                    "pierce/canvas.upper-canvas"
+                ]
+            ],
+            "offsetY": 401.8125,
+            "offsetX": 607,
+            "duration": 1654.1000000089407
+        },
+        {
+            "type": "keyDown",
+            "target": "main",
+            "key": "Delete"
+        },
+        {
+            "type": "keyUp",
+            "key": "Delete",
+            "target": "main"
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "aria/High-Waisted Light-Wash Jeans"
+                ],
+                [
+                    "div.pieces-tray > div:nth-of-type(1) button:nth-of-type(2) img"
+                ],
+                [
+                    "xpath//html/body/div/div[1]/main/div/div/div[3]/div/div[2]/div[1]/div[2]/button[2]/div/img"
+                ],
+                [
+                    "pierce/div.pieces-tray > div:nth-of-type(1) button:nth-of-type(2) img"
+                ]
+            ],
+            "offsetY": 32.78125,
+            "offsetX": 3.734375
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "canvas.upper-canvas"
+                ],
+                [
+                    "xpath//html/body/div/div[1]/main/div/div/div[3]/div/div[1]/div/canvas[2]"
+                ],
+                [
+                    "pierce/canvas.upper-canvas"
+                ]
+            ],
+            "offsetY": 543.8125,
+            "offsetX": 639,
+            "duration": 501
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "aria/Black Handbag"
+                ],
+                [
+                    "div.board-layout > div button:nth-of-type(4) img"
+                ],
+                [
+                    "xpath//html/body/div/div[1]/main/div/div/div[3]/div/div[2]/div[2]/div[2]/button[4]/div/img"
+                ],
+                [
+                    "pierce/div.board-layout > div button:nth-of-type(4) img"
+                ]
+            ],
+            "offsetY": 52.796875,
+            "offsetX": 47.859375
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "canvas.upper-canvas"
+                ],
+                [
+                    "xpath//html/body/div/div[1]/main/div/div/div[3]/div/div[1]/div/canvas[2]"
+                ],
+                [
+                    "pierce/canvas.upper-canvas"
+                ]
+            ],
+            "offsetY": 440.8125,
+            "offsetX": 968,
+            "duration": 594
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "canvas.upper-canvas"
+                ],
+                [
+                    "xpath//html/body/div/div[1]/main/div/div/div[3]/div/div[1]/div/canvas[2]"
+                ],
+                [
+                    "pierce/canvas.upper-canvas"
+                ]
+            ],
+            "offsetY": 438.8125,
+            "offsetX": 840,
+            "duration": 620
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "canvas.upper-canvas"
+                ],
+                [
+                    "xpath//html/body/div/div[1]/main/div/div/div[3]/div/div[1]/div/canvas[2]"
+                ],
+                [
+                    "pierce/canvas.upper-canvas"
+                ]
+            ],
+            "offsetY": 393.8125,
+            "offsetX": 817,
+            "duration": 425
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "aria/Modern Moto-Chic[role=\"image\"]"
+                ],
+                [
+                    "button:nth-of-type(16) > img"
+                ],
+                [
+                    "xpath//html/body/div/div[1]/main/div/div/div[3]/aside/div/div/button[16]/img"
+                ],
+                [
+                    "pierce/button:nth-of-type(16) > img"
+                ]
+            ],
+            "offsetY": 33.34375,
+            "offsetX": 31
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "aria/Ribbed turtleneck sweater"
+                ],
+                [
+                    "div.pieces-tray > div:nth-of-type(3) button:nth-of-type(2) img"
+                ],
+                [
+                    "xpath//html/body/div/div[1]/main/div/div/div[3]/div/div[2]/div[3]/div[2]/button[2]/div/img"
+                ],
+                [
+                    "pierce/div.pieces-tray > div:nth-of-type(3) button:nth-of-type(2) img"
+                ]
+            ],
+            "offsetY": 46.796875,
+            "offsetX": 29.3125
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "canvas.upper-canvas"
+                ],
+                [
+                    "xpath//html/body/div/div[1]/main/div/div/div[3]/div/div[1]/div/canvas[2]"
+                ],
+                [
+                    "pierce/canvas.upper-canvas"
+                ]
+            ],
+            "offsetY": 276.8125,
+            "offsetX": 645,
+            "duration": 2417
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "aria/Trench coat"
+                ],
+                [
+                    "div.pieces-tray > div:nth-of-type(3) button:nth-of-type(1) img"
+                ],
+                [
+                    "xpath//html/body/div/div[1]/main/div/div/div[3]/div/div[2]/div[3]/div[2]/button[1]/div/img"
+                ],
+                [
+                    "pierce/div.pieces-tray > div:nth-of-type(3) button:nth-of-type(1) img"
+                ]
+            ],
+            "offsetY": 53.796875,
+            "offsetX": 16.875
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "canvas.upper-canvas"
+                ],
+                [
+                    "xpath//html/body/div/div[1]/main/div/div/div[3]/div/div[1]/div/canvas[2]"
+                ],
+                [
+                    "pierce/canvas.upper-canvas"
+                ]
+            ],
+            "offsetY": 307.8125,
+            "offsetX": 233,
+            "duration": 4296.899999991059
+        },
+        {
+            "type": "keyDown",
+            "target": "main",
+            "key": "Delete"
+        },
+        {
+            "type": "keyUp",
+            "key": "Delete",
+            "target": "main"
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "canvas.upper-canvas"
+                ],
+                [
+                    "xpath//html/body/div/div[1]/main/div/div/div[3]/div/div[1]/div/canvas[2]"
+                ],
+                [
+                    "pierce/canvas.upper-canvas"
+                ]
+            ],
+            "offsetY": 318.8125,
+            "offsetX": 536
+        },
+        {
+            "type": "keyDown",
+            "target": "main",
+            "key": "Delete"
+        },
+        {
+            "type": "keyUp",
+            "key": "Delete",
+            "target": "main"
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "aria/Minimalist Casual Sleeveless Tank & Denim[role=\"image\"]"
+                ],
+                [
+                    "button:nth-of-type(22) > img"
+                ],
+                [
+                    "xpath//html/body/div/div[1]/main/div/div/div[3]/aside/div/div/button[22]/img"
+                ],
+                [
+                    "pierce/button:nth-of-type(22) > img"
+                ]
+            ],
+            "offsetY": 24.03125,
+            "offsetX": 22
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "canvas.upper-canvas"
+                ],
+                [
+                    "xpath//html/body/div/div[1]/main/div/div/div[3]/div/div[1]/div/canvas[2]"
+                ],
+                [
+                    "pierce/canvas.upper-canvas"
+                ]
+            ],
+            "offsetY": 242.8125,
+            "offsetX": 602,
+            "duration": 1268
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "aria/Trench coat"
+                ],
+                [
+                    "div.pieces-tray > div:nth-of-type(3) button:nth-of-type(1) img"
+                ],
+                [
+                    "xpath//html/body/div/div[1]/main/div/div/div[3]/div/div[2]/div[3]/div[2]/button[1]/div/img"
+                ],
+                [
+                    "pierce/div.pieces-tray > div:nth-of-type(3) button:nth-of-type(1) img"
+                ]
+            ],
+            "offsetY": 27.796875,
+            "offsetX": 8.875
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "canvas.upper-canvas"
+                ],
+                [
+                    "xpath//html/body/div/div[1]/main/div/div/div[3]/div/div[1]/div/canvas[2]"
+                ],
+                [
+                    "pierce/canvas.upper-canvas"
+                ]
+            ],
+            "offsetY": 335.8125,
+            "offsetX": 663,
+            "duration": 552.0999999940395
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "canvas.upper-canvas"
+                ],
+                [
+                    "xpath//html/body/div/div[1]/main/div/div/div[3]/div/div[1]/div/canvas[2]"
+                ],
+                [
+                    "pierce/canvas.upper-canvas"
+                ]
+            ],
+            "offsetY": 629.8125,
+            "offsetX": 1014,
+            "duration": 447
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "canvas.upper-canvas"
+                ],
+                [
+                    "xpath//html/body/div/div[1]/main/div/div/div[3]/div/div[1]/div/canvas[2]"
+                ],
+                [
+                    "pierce/canvas.upper-canvas"
+                ]
+            ],
+            "offsetY": 425.8125,
+            "offsetX": 758,
+            "duration": 1949
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "canvas.upper-canvas"
+                ],
+                [
+                    "xpath//html/body/div/div[1]/main/div/div/div[3]/div/div[1]/div/canvas[2]"
+                ],
+                [
+                    "pierce/canvas.upper-canvas"
+                ]
+            ],
+            "offsetY": 544.8125,
+            "offsetX": 809,
+            "duration": 799.0999999940395
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "canvas.upper-canvas"
+                ],
+                [
+                    "xpath//html/body/div/div[1]/main/div/div/div[3]/div/div[1]/div/canvas[2]"
+                ],
+                [
+                    "pierce/canvas.upper-canvas"
+                ]
+            ],
+            "offsetY": 482.8125,
+            "offsetX": 764,
+            "duration": 6192.100000008941
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "aria/EXPORT",
+                    "aria/[role=\"generic\"]"
+                ],
+                [
+                    "div.toolbar span"
+                ],
+                [
+                    "xpath//html/body/div/div[1]/main/div/div/div[3]/div/div[3]/button[2]/span"
+                ],
+                [
+                    "pierce/div.toolbar span"
+                ],
+                [
+                    "text/Export"
+                ]
+            ],
+            "offsetY": 0.796875,
+            "offsetX": 3.359375
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "aria/Me"
+                ],
+                [
+                    "nav.hidden a:nth-of-type(7)"
+                ],
+                [
+                    "xpath//html/body/div/div[1]/nav[1]/div/div/div/a[7]"
+                ],
+                [
+                    "pierce/nav.hidden a:nth-of-type(7)"
+                ]
+            ],
+            "offsetY": 33,
+            "offsetX": 2.5
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "aria/Either"
+                ],
+                [
+                    "button:nth-of-type(3)"
+                ],
+                [
+                    "xpath//html/body/div/div[1]/main/div/div/div/div[8]/div[2]/button[3]"
+                ],
+                [
+                    "pierce/button:nth-of-type(3)"
+                ],
+                [
+                    "text/Either"
+                ]
+            ],
+            "offsetY": 28.024383544921875,
+            "offsetX": 30.454833984375
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "aria/Gals"
+                ],
+                [
+                    "div:nth-of-type(8) button:nth-of-type(2)"
+                ],
+                [
+                    "xpath//html/body/div/div[1]/main/div/div/div/div[8]/div[2]/button[2]"
+                ],
+                [
+                    "pierce/div:nth-of-type(8) button:nth-of-type(2)"
+                ],
+                [
+                    "text/Gals"
+                ]
+            ],
+            "offsetY": 22.024383544921875,
+            "offsetX": 55.5228271484375
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "div:nth-of-type(2) span.text-2xl"
+                ],
+                [
+                    "xpath//html/body/div/div[1]/main/div/div/div/div[5]/div/div[1]/div[2]/button/div/span[1]"
+                ],
+                [
+                    "pierce/div:nth-of-type(2) span.text-2xl"
+                ],
+                [
+                    "text/160"
+                ]
+            ],
+            "offsetY": 16.265625,
+            "offsetX": 11
+        },
+        {
+            "type": "change",
+            "value": "162",
+            "selectors": [
+                [
+                    "aria/[role=\"main\"]",
+                    "aria/[role=\"spinbutton\"]"
+                ],
+                [
+                    "input"
+                ],
+                [
+                    "xpath//html/body/div/div[1]/main/div/div/div/div[5]/div/div[1]/div[2]/div[2]/input"
+                ],
+                [
+                    "pierce/input"
+                ],
+                [
+                    "text/160"
+                ]
+            ],
+            "target": "main"
+        },
+        {
+            "type": "keyDown",
+            "target": "main",
+            "key": "Enter"
+        },
+        {
+            "type": "keyUp",
+            "key": "Enter",
+            "target": "main"
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "aria/Home"
+                ],
+                [
+                    "nav.hidden > div > div > div > a:nth-of-type(1)"
+                ],
+                [
+                    "xpath//html/body/div/div[1]/nav[1]/div/div/div/a[1]"
+                ],
+                [
+                    "pierce/nav.hidden > div > div > div > a:nth-of-type(1)"
+                ]
+            ],
+            "offsetY": 41,
+            "offsetX": 30.609375
+        }
+    ]
+}
