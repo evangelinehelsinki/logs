@@ -1,0 +1,2194 @@
+{
+  "metadata": {
+    "url": "https://youtu.be/TdondBmyNXc?si=v7jsLEPPqZB8BFK_",
+    "video_id": "TdondBmyNXc",
+    "title": "I replaced my entire stack with Postgres...",
+    "channel": "The Coding Gopher",
+    "duration_seconds": 644
+  },
+  "processing": {
+    "mode": "podcast",
+    "transcript_source": "youtube_transcript_api",
+    "segment_count": 339,
+    "frame_count": 0,
+    "ocr_enabled": false,
+    "technical_fps_requested": null,
+    "technical_fps_effective": null,
+    "video_copy_path": null
+  },
+  "context": {
+    "transcript_windows": [
+      {
+        "start": 0,
+        "end": 30,
+        "timestamp": "0:00",
+        "text": "I just replaced my entire tech stack with Postgress. Modern software engineering has basically become a subscription management simulator. We've been gaslit by cloud vendors into believing that to build even a basic application, we need to stitch together a f…"
+      },
+      {
+        "start": 30,
+        "end": 60,
+        "timestamp": "0:30",
+        "text": "and your mom, you're paying a dozen different Y Combinatorbacked SAS startups just to keep the lights on. It is an overengineered, wildly overpriced trap. But what if I told you that you could take almost all of those shiny cloud dependencies, toss them direc…"
+      },
+      {
+        "start": 60,
+        "end": 90,
+        "timestamp": "1:00",
+        "text": "literally everything. Before we start violently dismantling your current architecture, let's look at the weapon that we're using. At its core, Postcrestql is an open- source object relational database system that has been in active development for over three…"
+      },
+      {
+        "start": 90,
+        "end": 120,
+        "timestamp": "1:30",
+        "text": "to a massive ecosystem of thirdparty extensions. It's basically the Skyrim of databases, a rockolid foundation that you can aggressively mod until it does exactly what you want. Here is how you use it to replace everything. One of the great debates among web…"
+      },
+      {
+        "start": 120,
+        "end": 150,
+        "timestamp": "2:00",
+        "text": "binary. Unlike standard text storage that must be parsed every time a query is run, JSON B converts your JSON payload into a decomposed binary format at the moment of insertion. The true magic unlocks when you apply a gin or generalized inverted index to this…"
+      },
+      {
+        "start": 150,
+        "end": 180,
+        "timestamp": "2:30",
+        "text": "documents with traditional relational tables in a single asset compliant transaction. You get the exact schema flexibility of NoSQL without sacrificing data integrity. Provisioning Rabbit MQ or Reddus purely for reliable task distribution introduces massive a…"
+      },
+      {
+        "start": 180,
+        "end": 210,
+        "timestamp": "3:00",
+        "text": "row at the exact same time. One locks it and the other gets stuck waiting. Adding skip locked changes the physics of the query. It instructs the database engine, grab the first available row, lock it so no one else can touch it. But if you hit a row that is a…"
+      },
+      {
+        "start": 210,
+        "end": 240,
+        "timestamp": "3:30",
+        "text": "them just to power a search bar in your app is massive overkill. Postgress is fully equipped to power advanced full text search directly by stripping language down to its mechanical roots using TS vector and TS query. When you insert text into a TS vector col…"
+      },
+      {
+        "start": 240,
+        "end": 270,
+        "timestamp": "4:00",
+        "text": "It does this using triagrams, which simply breaks words down into three-letter chunks. If a user misspells Postgrql as Postgress with two S's, the database doesn't look for an exact match. It finds the overlapping three-letter patterns and returns the correct…"
+      },
+      {
+        "start": 270,
+        "end": 300,
+        "timestamp": "4:30",
+        "text": "problem. If you need to find documents semantically similar to a user prompt, but only if they were authored by a specific user last week, querying two different databases and cross referencing the results over a network is incredibly slow. You can handle thi…"
+      },
+      {
+        "start": 300,
+        "end": 330,
+        "timestamp": "5:00",
+        "text": "a highdimensional skip list. It allows for fast scalable vector searches by starting at a top layer with few longrange connections and moving to lower denser layers to refine the search. This minimizes the number of distance calculations needed, allowing the…"
+      },
+      {
+        "start": 330,
+        "end": 360,
+        "timestamp": "5:30",
+        "text": "provisioning, scaling, and managing testing environments for it can still be a massive headache, and that's exactly where today's sponsor, Neon, comes in. Neon is a fully managed serverless Postgress platform built specifically for the cloud. They've fundamen…"
+      },
+      {
+        "start": 360,
+        "end": 390,
+        "timestamp": "6:00",
+        "text": "your database in seconds with all of its data, and run your tests. If you mess up, your prod database remains completely untouched. It completely changes how you handle dev and staging environments. Plus, because Neon is true serverless, it automatically scal…"
+      },
+      {
+        "start": 390,
+        "end": 420,
+        "timestamp": "6:30",
+        "text": "frictionless. Click the link in the description to sign up and deploy your first serverless Postgress database on Neon for free in just seconds. A huge thanks to Neon for sponsoring this video. Now, back to even more Postgress. If you're building applications…"
+      },
+      {
+        "start": 420,
+        "end": 450,
+        "timestamp": "7:00",
+        "text": "mathematical distance calculations on every coordinate would crash the server. Instead, a generalized search tree draws simple overlapping bounding boxes around your geographic shapes. The database first checks these simple boxes instantly discarding millions…"
+      },
+      {
+        "start": 450,
+        "end": 480,
+        "timestamp": "7:30",
+        "text": "Postgress handles this natively through declarative partitioning and the highly underutilized brin or block range index. Instead of storing billions of logs in one massive table, partitioning transparently splits your data into physical daily or monthly chunk…"
+      },
+      {
+        "start": 480,
+        "end": 510,
+        "timestamp": "8:00",
+        "text": "of physical disk pages that don't contain your target timestamps, and scans only the tiny fraction that do. How about for complex dashboards? The knee-jerk reaction is to pipe data into expensive data warehouses like snowflake. You can bypass this by leveragi…"
+      },
+      {
+        "start": 510,
+        "end": 540,
+        "timestamp": "8:30",
+        "text": "Postgress uses the refresh materialized view concurrently command provided your view has a unique index. It calculates the fresh analytics entirely in the background, compares the differences and seamlessly hot swaps the updated rows into place without ever l…"
+      },
+      {
+        "start": 540,
+        "end": 570,
+        "timestamp": "9:00",
+        "text": "GraphQL extension. Instead of manually writing a new controller and endpoint every time you add a database table, these tools analyze your schema and automatically generate a fully documented highly performant REST or GraphQL API on the fly. And before you pa…"
+      },
+      {
+        "start": 570,
+        "end": 600,
+        "timestamp": "9:30",
+        "text": "your entire backend, eliminating the need for a fleet of API servers. While the just use Postgress philosophy is incredibly powerful, you shouldn't entirely abandon your critical thinking. It isn't a silver bullet. Postgress scales vertically with exceptional…"
+      },
+      {
+        "start": 600,
+        "end": 630,
+        "timestamp": "10:00",
+        "text": "tools. However, until you cross that threshold of massive enterprise scale, leaning on the core battle tested mechanics of Postgress to run your entire stack is arguably the smartest and most cost-effective engineering decision you can make. Seriously, to rea…"
+      },
+      {
+        "start": 630,
+        "end": 660,
+        "timestamp": "10:30",
+        "text": "software. Check the description for a link that automatically applies a 40% discount to your account. Also in the description is a link to my free newsletter where I share exclusive deep dives on system design and real world backend development. The stuff you…"
+      }
+    ],
+    "visual_samples": []
+  },
+  "segments": [
+    {
+      "text": "I just replaced my entire tech stack",
+      "start": 0.08,
+      "duration": 3.2,
+      "end": 3.2800000000000002
+    },
+    {
+      "text": "with Postgress. Modern software",
+      "start": 1.76,
+      "duration": 3.039,
+      "end": 4.799
+    },
+    {
+      "text": "engineering has basically become a",
+      "start": 3.28,
+      "duration": 3.36,
+      "end": 6.64
+    },
+    {
+      "text": "subscription management simulator. We've",
+      "start": 4.799,
+      "duration": 3.601,
+      "end": 8.4
+    },
+    {
+      "text": "been gaslit by cloud vendors into",
+      "start": 6.64,
+      "duration": 3.68,
+      "end": 10.32
+    },
+    {
+      "text": "believing that to build even a basic",
+      "start": 8.4,
+      "duration": 3.68,
+      "end": 12.08
+    },
+    {
+      "text": "application, we need to stitch together",
+      "start": 10.32,
+      "duration": 4.08,
+      "end": 14.4
+    },
+    {
+      "text": "a fragile distributed web of highly",
+      "start": 12.08,
+      "duration": 4.24,
+      "end": 16.32
+    },
+    {
+      "text": "specialized microservices. You wire up a",
+      "start": 14.4,
+      "duration": 4.0,
+      "end": 18.4
+    },
+    {
+      "text": "Reddus instance for caching, a CFKA",
+      "start": 16.32,
+      "duration": 3.92,
+      "end": 20.240000000000002
+    },
+    {
+      "text": "cluster for background jobs, elastic",
+      "start": 18.4,
+      "duration": 3.84,
+      "end": 22.24
+    },
+    {
+      "text": "search just to power a simple search bar",
+      "start": 20.24,
+      "duration": 4.32,
+      "end": 24.56
+    },
+    {
+      "text": "and a dedicated vector database for that",
+      "start": 22.24,
+      "duration": 4.32,
+      "end": 26.56
+    },
+    {
+      "text": "one AI feature you tacked on. By the",
+      "start": 24.56,
+      "duration": 3.6,
+      "end": 28.16
+    },
+    {
+      "text": "time you finally deploy your app to your",
+      "start": 26.56,
+      "duration": 3.68,
+      "end": 30.24
+    },
+    {
+      "text": "highly demanding user base of yourself",
+      "start": 28.16,
+      "duration": 3.919,
+      "end": 32.079
+    },
+    {
+      "text": "and your mom, you're paying a dozen",
+      "start": 30.24,
+      "duration": 3.68,
+      "end": 33.92
+    },
+    {
+      "text": "different Y Combinatorbacked SAS",
+      "start": 32.079,
+      "duration": 3.681,
+      "end": 35.76
+    },
+    {
+      "text": "startups just to keep the lights on. It",
+      "start": 33.92,
+      "duration": 3.84,
+      "end": 37.760000000000005
+    },
+    {
+      "text": "is an overengineered, wildly overpriced",
+      "start": 35.76,
+      "duration": 3.44,
+      "end": 39.199999999999996
+    },
+    {
+      "text": "trap. But what if I told you that you",
+      "start": 37.76,
+      "duration": 2.88,
+      "end": 40.64
+    },
+    {
+      "text": "could take almost all of those shiny",
+      "start": 39.2,
+      "duration": 3.28,
+      "end": 42.480000000000004
+    },
+    {
+      "text": "cloud dependencies, toss them directly",
+      "start": 40.64,
+      "duration": 3.28,
+      "end": 43.92
+    },
+    {
+      "text": "into the incinerator and replace them",
+      "start": 42.48,
+      "duration": 2.96,
+      "end": 45.44
+    },
+    {
+      "text": "with a single piece of boring",
+      "start": 43.92,
+      "duration": 3.68,
+      "end": 47.6
+    },
+    {
+      "text": "30-year-old open-source software? The",
+      "start": 45.44,
+      "duration": 3.84,
+      "end": 49.28
+    },
+    {
+      "text": "dirty little secret the tech industry",
+      "start": 47.6,
+      "duration": 3.2,
+      "end": 50.800000000000004
+    },
+    {
+      "text": "doesn't want you to know is that one",
+      "start": 49.28,
+      "duration": 3.68,
+      "end": 52.96
+    },
+    {
+      "text": "battle tested tool cannibalize your",
+      "start": 50.8,
+      "duration": 3.759,
+      "end": 54.559
+    },
+    {
+      "text": "entire architecture. Today we're",
+      "start": 52.96,
+      "duration": 3.04,
+      "end": 56.0
+    },
+    {
+      "text": "stripping your stack down to one",
+      "start": 54.559,
+      "duration": 4.0,
+      "end": 58.559
+    },
+    {
+      "text": "unstoppable source of truth, PostgreSQL.",
+      "start": 56.0,
+      "duration": 4.48,
+      "end": 60.480000000000004
+    },
+    {
+      "text": "Here's how you use Postgress to replace",
+      "start": 58.559,
+      "duration": 3.84,
+      "end": 62.399
+    },
+    {
+      "text": "literally everything. Before we start",
+      "start": 60.48,
+      "duration": 3.44,
+      "end": 63.919999999999995
+    },
+    {
+      "text": "violently dismantling your current",
+      "start": 62.399,
+      "duration": 3.04,
+      "end": 65.43900000000001
+    },
+    {
+      "text": "architecture, let's look at the weapon",
+      "start": 63.92,
+      "duration": 2.879,
+      "end": 66.799
+    },
+    {
+      "text": "that we're using. At its core,",
+      "start": 65.439,
+      "duration": 3.601,
+      "end": 69.03999999999999
+    },
+    {
+      "text": "Postcrestql is an open- source object",
+      "start": 66.799,
+      "duration": 3.841,
+      "end": 70.64
+    },
+    {
+      "text": "relational database system that has been",
+      "start": 69.04,
+      "duration": 3.28,
+      "end": 72.32000000000001
+    },
+    {
+      "text": "in active development for over three",
+      "start": 70.64,
+      "duration": 3.28,
+      "end": 73.92
+    },
+    {
+      "text": "decades. Out of the box, it gives you",
+      "start": 72.32,
+      "duration": 3.68,
+      "end": 76.0
+    },
+    {
+      "text": "rocksolid acid compliance, meaning when",
+      "start": 73.92,
+      "duration": 3.6,
+      "end": 77.52
+    },
+    {
+      "text": "your cheap cloud server inevitably",
+      "start": 76.0,
+      "duration": 3.36,
+      "end": 79.36
+    },
+    {
+      "text": "crashes, your user data isn't corrupted.",
+      "start": 77.52,
+      "duration": 3.36,
+      "end": 80.88
+    },
+    {
+      "text": "But the real reason it cannibalize your",
+      "start": 79.36,
+      "duration": 3.439,
+      "end": 82.799
+    },
+    {
+      "text": "entire stack is its extensibility. It",
+      "start": 80.88,
+      "duration": 3.279,
+      "end": 84.15899999999999
+    },
+    {
+      "text": "doesn't just store standard rows and",
+      "start": 82.799,
+      "duration": 2.96,
+      "end": 85.759
+    },
+    {
+      "text": "columns. It supports advanced custom",
+      "start": 84.159,
+      "duration": 3.361,
+      "end": 87.52000000000001
+    },
+    {
+      "text": "data types, multi-dimensional arrays,",
+      "start": 85.759,
+      "duration": 3.761,
+      "end": 89.52
+    },
+    {
+      "text": "geometric shapes, and key value stores.",
+      "start": 87.52,
+      "duration": 3.68,
+      "end": 91.2
+    },
+    {
+      "text": "This architectural flexibility has led",
+      "start": 89.52,
+      "duration": 3.84,
+      "end": 93.36
+    },
+    {
+      "text": "to a massive ecosystem of thirdparty",
+      "start": 91.2,
+      "duration": 4.64,
+      "end": 95.84
+    },
+    {
+      "text": "extensions. It's basically the Skyrim of",
+      "start": 93.36,
+      "duration": 4.48,
+      "end": 97.84
+    },
+    {
+      "text": "databases, a rockolid foundation that",
+      "start": 95.84,
+      "duration": 3.919,
+      "end": 99.759
+    },
+    {
+      "text": "you can aggressively mod until it does",
+      "start": 97.84,
+      "duration": 3.76,
+      "end": 101.60000000000001
+    },
+    {
+      "text": "exactly what you want. Here is how you",
+      "start": 99.759,
+      "duration": 3.761,
+      "end": 103.52
+    },
+    {
+      "text": "use it to replace everything. One of the",
+      "start": 101.6,
+      "duration": 3.68,
+      "end": 105.28
+    },
+    {
+      "text": "great debates among web developers is",
+      "start": 103.52,
+      "duration": 3.599,
+      "end": 107.119
+    },
+    {
+      "text": "SQL versus NoSQL. And the core selling",
+      "start": 105.28,
+      "duration": 3.76,
+      "end": 109.04
+    },
+    {
+      "text": "point of NoSQL is handling unstructured",
+      "start": 107.119,
+      "duration": 3.441,
+      "end": 110.56
+    },
+    {
+      "text": "data. You no longer need a separate",
+      "start": 109.04,
+      "duration": 3.52,
+      "end": 112.56
+    },
+    {
+      "text": "database like MongoDB just to do this.",
+      "start": 110.56,
+      "duration": 3.76,
+      "end": 114.32000000000001
+    },
+    {
+      "text": "Postgress offers deeply integrated",
+      "start": 112.56,
+      "duration": 4.0,
+      "end": 116.56
+    },
+    {
+      "text": "native support for JSON through its JSON",
+      "start": 114.32,
+      "duration": 4.079,
+      "end": 118.39899999999999
+    },
+    {
+      "text": "B data type which fundamentally changes",
+      "start": 116.56,
+      "duration": 4.159,
+      "end": 120.71900000000001
+    },
+    {
+      "text": "how data is processed. The B stands for",
+      "start": 118.399,
+      "duration": 4.161,
+      "end": 122.56
+    },
+    {
+      "text": "binary. Unlike standard text storage",
+      "start": 120.719,
+      "duration": 3.76,
+      "end": 124.479
+    },
+    {
+      "text": "that must be parsed every time a query",
+      "start": 122.56,
+      "duration": 4.0,
+      "end": 126.56
+    },
+    {
+      "text": "is run, JSON B converts your JSON",
+      "start": 124.479,
+      "duration": 4.4,
+      "end": 128.879
+    },
+    {
+      "text": "payload into a decomposed binary format",
+      "start": 126.56,
+      "duration": 4.08,
+      "end": 130.64000000000001
+    },
+    {
+      "text": "at the moment of insertion. The true",
+      "start": 128.879,
+      "duration": 3.921,
+      "end": 132.79999999999998
+    },
+    {
+      "text": "magic unlocks when you apply a gin or",
+      "start": 130.64,
+      "duration": 4.239,
+      "end": 134.879
+    },
+    {
+      "text": "generalized inverted index to this",
+      "start": 132.8,
+      "duration": 4.24,
+      "end": 137.04000000000002
+    },
+    {
+      "text": "column. An inverted index works exactly",
+      "start": 134.879,
+      "duration": 3.761,
+      "end": 138.64
+    },
+    {
+      "text": "like the index at the back of a",
+      "start": 137.04,
+      "duration": 3.12,
+      "end": 140.16
+    },
+    {
+      "text": "textbook. Instead of scanning every",
+      "start": 138.64,
+      "duration": 3.84,
+      "end": 142.48
+    },
+    {
+      "text": "database row looking for a specific key,",
+      "start": 140.16,
+      "duration": 4.799,
+      "end": 144.959
+    },
+    {
+      "text": "the index maps the keys directly to the",
+      "start": 142.48,
+      "duration": 4.32,
+      "end": 146.79999999999998
+    },
+    {
+      "text": "row IDs where they exist. This allows",
+      "start": 144.959,
+      "duration": 3.601,
+      "end": 148.56
+    },
+    {
+      "text": "you to query deeply nested JSON",
+      "start": 146.8,
+      "duration": 3.36,
+      "end": 150.16000000000003
+    },
+    {
+      "text": "properties instantly and join those",
+      "start": 148.56,
+      "duration": 3.28,
+      "end": 151.84
+    },
+    {
+      "text": "documents with traditional relational",
+      "start": 150.16,
+      "duration": 3.52,
+      "end": 153.68
+    },
+    {
+      "text": "tables in a single asset compliant",
+      "start": 151.84,
+      "duration": 3.759,
+      "end": 155.599
+    },
+    {
+      "text": "transaction. You get the exact schema",
+      "start": 153.68,
+      "duration": 4.24,
+      "end": 157.92000000000002
+    },
+    {
+      "text": "flexibility of NoSQL without sacrificing",
+      "start": 155.599,
+      "duration": 4.561,
+      "end": 160.16
+    },
+    {
+      "text": "data integrity. Provisioning Rabbit MQ",
+      "start": 157.92,
+      "duration": 4.319,
+      "end": 162.23899999999998
+    },
+    {
+      "text": "or Reddus purely for reliable task",
+      "start": 160.16,
+      "duration": 3.68,
+      "end": 163.84
+    },
+    {
+      "text": "distribution introduces massive",
+      "start": 162.239,
+      "duration": 3.28,
+      "end": 165.519
+    },
+    {
+      "text": "architectural overhead. But building a",
+      "start": 163.84,
+      "duration": 3.759,
+      "end": 167.599
+    },
+    {
+      "text": "queue in a standard SQL database usually",
+      "start": 165.519,
+      "duration": 3.841,
+      "end": 169.36
+    },
+    {
+      "text": "leads to deadlocks. Postgress solved",
+      "start": 167.599,
+      "duration": 3.121,
+      "end": 170.72
+    },
+    {
+      "text": "this elegantly with its native",
+      "start": 169.36,
+      "duration": 3.599,
+      "end": 172.959
+    },
+    {
+      "text": "concurrency control, specifically the",
+      "start": 170.72,
+      "duration": 4.56,
+      "end": 175.28
+    },
+    {
+      "text": "four update skip locked clause. When",
+      "start": 172.959,
+      "duration": 4.241,
+      "end": 177.2
+    },
+    {
+      "text": "building a background worker system, the",
+      "start": 175.28,
+      "duration": 3.76,
+      "end": 179.04
+    },
+    {
+      "text": "traditional problem is that two workers",
+      "start": 177.2,
+      "duration": 4.24,
+      "end": 181.44
+    },
+    {
+      "text": "might try to grab the same pending job",
+      "start": 179.04,
+      "duration": 4.32,
+      "end": 183.35999999999999
+    },
+    {
+      "text": "row at the exact same time. One locks it",
+      "start": 181.44,
+      "duration": 3.92,
+      "end": 185.35999999999999
+    },
+    {
+      "text": "and the other gets stuck waiting. Adding",
+      "start": 183.36,
+      "duration": 4.0,
+      "end": 187.36
+    },
+    {
+      "text": "skip locked changes the physics of the",
+      "start": 185.36,
+      "duration": 3.92,
+      "end": 189.28
+    },
+    {
+      "text": "query. It instructs the database engine,",
+      "start": 187.36,
+      "duration": 4.4,
+      "end": 191.76000000000002
+    },
+    {
+      "text": "grab the first available row, lock it so",
+      "start": 189.28,
+      "duration": 4.239,
+      "end": 193.519
+    },
+    {
+      "text": "no one else can touch it. But if you hit",
+      "start": 191.76,
+      "duration": 3.52,
+      "end": 195.28
+    },
+    {
+      "text": "a row that is already locked by another",
+      "start": 193.519,
+      "duration": 3.761,
+      "end": 197.28
+    },
+    {
+      "text": "worker, don't wait. Just skip it and",
+      "start": 195.28,
+      "duration": 4.08,
+      "end": 199.36
+    },
+    {
+      "text": "grab the next one. This turns a standard",
+      "start": 197.28,
+      "duration": 3.84,
+      "end": 201.12
+    },
+    {
+      "text": "relational table into a highly",
+      "start": 199.36,
+      "duration": 4.08,
+      "end": 203.44000000000003
+    },
+    {
+      "text": "concurrent weight-free message cue",
+      "start": 201.12,
+      "duration": 4.399,
+      "end": 205.519
+    },
+    {
+      "text": "capable of processing thousands of jobs",
+      "start": 203.44,
+      "duration": 3.76,
+      "end": 207.2
+    },
+    {
+      "text": "per second. While specialized tools like",
+      "start": 205.519,
+      "duration": 3.201,
+      "end": 208.72
+    },
+    {
+      "text": "Elastic Search are mandatory for",
+      "start": 207.2,
+      "duration": 3.759,
+      "end": 210.95899999999997
+    },
+    {
+      "text": "globally distributed log analysis, using",
+      "start": 208.72,
+      "duration": 4.079,
+      "end": 212.799
+    },
+    {
+      "text": "them just to power a search bar in your",
+      "start": 210.959,
+      "duration": 4.0,
+      "end": 214.959
+    },
+    {
+      "text": "app is massive overkill. Postgress is",
+      "start": 212.799,
+      "duration": 3.841,
+      "end": 216.64000000000001
+    },
+    {
+      "text": "fully equipped to power advanced full",
+      "start": 214.959,
+      "duration": 3.36,
+      "end": 218.31900000000002
+    },
+    {
+      "text": "text search directly by stripping",
+      "start": 216.64,
+      "duration": 3.519,
+      "end": 220.159
+    },
+    {
+      "text": "language down to its mechanical roots",
+      "start": 218.319,
+      "duration": 4.48,
+      "end": 222.79899999999998
+    },
+    {
+      "text": "using TS vector and TS query. When you",
+      "start": 220.159,
+      "duration": 4.8,
+      "end": 224.959
+    },
+    {
+      "text": "insert text into a TS vector column,",
+      "start": 222.799,
+      "duration": 4.241,
+      "end": 227.04000000000002
+    },
+    {
+      "text": "Postgress parses it, removes useless",
+      "start": 224.959,
+      "duration": 3.92,
+      "end": 228.879
+    },
+    {
+      "text": "stop words, and applies linguistic",
+      "start": 227.04,
+      "duration": 4.0,
+      "end": 231.04
+    },
+    {
+      "text": "stemming. So a word like running simply",
+      "start": 228.879,
+      "duration": 4.321,
+      "end": 233.2
+    },
+    {
+      "text": "becomes run. Furthermore, you can apply",
+      "start": 231.04,
+      "duration": 5.279,
+      "end": 236.319
+    },
+    {
+      "text": "the pg triagram extension for fuzzy",
+      "start": 233.2,
+      "duration": 4.88,
+      "end": 238.07999999999998
+    },
+    {
+      "text": "matching, the ability to find accurate",
+      "start": 236.319,
+      "duration": 3.84,
+      "end": 240.159
+    },
+    {
+      "text": "results even when a user makes a typo.",
+      "start": 238.08,
+      "duration": 4.079,
+      "end": 242.15900000000002
+    },
+    {
+      "text": "It does this using triagrams, which",
+      "start": 240.159,
+      "duration": 3.44,
+      "end": 243.599
+    },
+    {
+      "text": "simply breaks words down into",
+      "start": 242.159,
+      "duration": 3.521,
+      "end": 245.67999999999998
+    },
+    {
+      "text": "three-letter chunks. If a user misspells",
+      "start": 243.599,
+      "duration": 4.881,
+      "end": 248.48
+    },
+    {
+      "text": "Postgrql as Postgress with two S's, the",
+      "start": 245.68,
+      "duration": 4.24,
+      "end": 249.92000000000002
+    },
+    {
+      "text": "database doesn't look for an exact",
+      "start": 248.48,
+      "duration": 3.119,
+      "end": 251.599
+    },
+    {
+      "text": "match. It finds the overlapping",
+      "start": 249.92,
+      "duration": 3.44,
+      "end": 253.35999999999999
+    },
+    {
+      "text": "three-letter patterns and returns the",
+      "start": 251.599,
+      "duration": 3.761,
+      "end": 255.35999999999999
+    },
+    {
+      "text": "correct result anyway, giving you a",
+      "start": 253.36,
+      "duration": 3.839,
+      "end": 257.199
+    },
+    {
+      "text": "highly performant typo tolerant search",
+      "start": 255.36,
+      "duration": 3.599,
+      "end": 258.959
+    },
+    {
+      "text": "engine without syncing data to a",
+      "start": 257.199,
+      "duration": 3.521,
+      "end": 260.72
+    },
+    {
+      "text": "secondary cluster. If you're building an",
+      "start": 258.959,
+      "duration": 3.601,
+      "end": 262.56
+    },
+    {
+      "text": "AI app, you might consider paying for a",
+      "start": 260.72,
+      "duration": 3.84,
+      "end": 264.56
+    },
+    {
+      "text": "vector database like Pine Cone. But",
+      "start": 262.56,
+      "duration": 3.68,
+      "end": 266.24
+    },
+    {
+      "text": "keeping vector data separate from your",
+      "start": 264.56,
+      "duration": 3.52,
+      "end": 268.08
+    },
+    {
+      "text": "relational data creates an architectural",
+      "start": 266.24,
+      "duration": 3.84,
+      "end": 270.08
+    },
+    {
+      "text": "nightmare known as the hybrid search",
+      "start": 268.08,
+      "duration": 3.6,
+      "end": 271.68
+    },
+    {
+      "text": "problem. If you need to find documents",
+      "start": 270.08,
+      "duration": 3.6,
+      "end": 273.68
+    },
+    {
+      "text": "semantically similar to a user prompt,",
+      "start": 271.68,
+      "duration": 3.84,
+      "end": 275.52
+    },
+    {
+      "text": "but only if they were authored by a",
+      "start": 273.68,
+      "duration": 4.239,
+      "end": 277.919
+    },
+    {
+      "text": "specific user last week, querying two",
+      "start": 275.52,
+      "duration": 3.92,
+      "end": 279.44
+    },
+    {
+      "text": "different databases and cross",
+      "start": 277.919,
+      "duration": 3.121,
+      "end": 281.03999999999996
+    },
+    {
+      "text": "referencing the results over a network",
+      "start": 279.44,
+      "duration": 3.44,
+      "end": 282.88
+    },
+    {
+      "text": "is incredibly slow. You can handle this",
+      "start": 281.04,
+      "duration": 3.92,
+      "end": 284.96000000000004
+    },
+    {
+      "text": "entirely within Postgress using the PG",
+      "start": 282.88,
+      "duration": 3.84,
+      "end": 286.71999999999997
+    },
+    {
+      "text": "vector extension. It allows you to store",
+      "start": 284.96,
+      "duration": 3.519,
+      "end": 288.479
+    },
+    {
+      "text": "highdimensional arrays right next to",
+      "start": 286.72,
+      "duration": 3.759,
+      "end": 290.47900000000004
+    },
+    {
+      "text": "your core application data and supports",
+      "start": 288.479,
+      "duration": 4.641,
+      "end": 293.12
+    },
+    {
+      "text": "HNSW or hierarchical navigable small",
+      "start": 290.479,
+      "duration": 5.121,
+      "end": 295.59999999999997
+    },
+    {
+      "text": "world indexes. HNSW is a graph-based",
+      "start": 293.12,
+      "duration": 4.079,
+      "end": 297.199
+    },
+    {
+      "text": "algorithm for approximate nearest",
+      "start": 295.6,
+      "duration": 3.599,
+      "end": 299.199
+    },
+    {
+      "text": "neighbor search that organizes vectors",
+      "start": 297.199,
+      "duration": 4.161,
+      "end": 301.36
+    },
+    {
+      "text": "into a multi-layered structure acting as",
+      "start": 299.199,
+      "duration": 4.161,
+      "end": 303.36
+    },
+    {
+      "text": "a highdimensional skip list. It allows",
+      "start": 301.36,
+      "duration": 4.48,
+      "end": 305.84000000000003
+    },
+    {
+      "text": "for fast scalable vector searches by",
+      "start": 303.36,
+      "duration": 4.24,
+      "end": 307.6
+    },
+    {
+      "text": "starting at a top layer with few",
+      "start": 305.84,
+      "duration": 3.6,
+      "end": 309.44
+    },
+    {
+      "text": "longrange connections and moving to",
+      "start": 307.6,
+      "duration": 3.76,
+      "end": 311.36
+    },
+    {
+      "text": "lower denser layers to refine the",
+      "start": 309.44,
+      "duration": 3.759,
+      "end": 313.199
+    },
+    {
+      "text": "search. This minimizes the number of",
+      "start": 311.36,
+      "duration": 3.76,
+      "end": 315.12
+    },
+    {
+      "text": "distance calculations needed, allowing",
+      "start": 313.199,
+      "duration": 3.84,
+      "end": 317.039
+    },
+    {
+      "text": "the database to rapidly navigate through",
+      "start": 315.12,
+      "duration": 3.84,
+      "end": 318.96
+    },
+    {
+      "text": "neighborhoods of similar data points to",
+      "start": 317.039,
+      "duration": 3.681,
+      "end": 320.71999999999997
+    },
+    {
+      "text": "find approximate nearest neighbors in",
+      "start": 318.96,
+      "duration": 3.36,
+      "end": 322.32
+    },
+    {
+      "text": "milliseconds. Ultimately, you can",
+      "start": 320.72,
+      "duration": 3.199,
+      "end": 323.91900000000004
+    },
+    {
+      "text": "execute this complex vector math",
+      "start": 322.32,
+      "duration": 3.76,
+      "end": 326.08
+    },
+    {
+      "text": "natively while simultaneously applying",
+      "start": 323.919,
+      "duration": 4.161,
+      "end": 328.08
+    },
+    {
+      "text": "strict relational filters. We've been",
+      "start": 326.08,
+      "duration": 3.28,
+      "end": 329.35999999999996
+    },
+    {
+      "text": "talking a lot about how powerful",
+      "start": 328.08,
+      "duration": 3.28,
+      "end": 331.35999999999996
+    },
+    {
+      "text": "Postgress is, but let's be honest,",
+      "start": 329.36,
+      "duration": 3.52,
+      "end": 332.88
+    },
+    {
+      "text": "provisioning, scaling, and managing",
+      "start": 331.36,
+      "duration": 3.2,
+      "end": 334.56
+    },
+    {
+      "text": "testing environments for it can still be",
+      "start": 332.88,
+      "duration": 3.28,
+      "end": 336.15999999999997
+    },
+    {
+      "text": "a massive headache, and that's exactly",
+      "start": 334.56,
+      "duration": 3.84,
+      "end": 338.4
+    },
+    {
+      "text": "where today's sponsor, Neon, comes in.",
+      "start": 336.16,
+      "duration": 4.16,
+      "end": 340.32000000000005
+    },
+    {
+      "text": "Neon is a fully managed serverless",
+      "start": 338.4,
+      "duration": 3.6,
+      "end": 342.0
+    },
+    {
+      "text": "Postgress platform built specifically",
+      "start": 340.32,
+      "duration": 3.12,
+      "end": 343.44
+    },
+    {
+      "text": "for the cloud. They've fundamentally",
+      "start": 342.0,
+      "duration": 3.199,
+      "end": 345.199
+    },
+    {
+      "text": "re-engineered Postgress by separating",
+      "start": 343.44,
+      "duration": 3.759,
+      "end": 347.199
+    },
+    {
+      "text": "compute from storage, which unlocks",
+      "start": 345.199,
+      "duration": 3.681,
+      "end": 348.88
+    },
+    {
+      "text": "features you just can't get with a",
+      "start": 347.199,
+      "duration": 3.201,
+      "end": 350.40000000000003
+    },
+    {
+      "text": "traditional setup. My absolute favorite",
+      "start": 348.88,
+      "duration": 3.44,
+      "end": 352.32
+    },
+    {
+      "text": "part about Neon is database branching.",
+      "start": 350.4,
+      "duration": 3.44,
+      "end": 353.84
+    },
+    {
+      "text": "Just like you branch your code in Git,",
+      "start": 352.32,
+      "duration": 3.2,
+      "end": 355.52
+    },
+    {
+      "text": "Neon lets you instantly branch your",
+      "start": 353.84,
+      "duration": 3.76,
+      "end": 357.59999999999997
+    },
+    {
+      "text": "Postgress database. Want to test a risky",
+      "start": 355.52,
+      "duration": 4.399,
+      "end": 359.919
+    },
+    {
+      "text": "schema migration or a complex query?",
+      "start": 357.6,
+      "duration": 4.159,
+      "end": 361.759
+    },
+    {
+      "text": "Just click a button, spin up a copy of",
+      "start": 359.919,
+      "duration": 3.361,
+      "end": 363.28
+    },
+    {
+      "text": "your database in seconds with all of its",
+      "start": 361.759,
+      "duration": 3.28,
+      "end": 365.039
+    },
+    {
+      "text": "data, and run your tests. If you mess",
+      "start": 363.28,
+      "duration": 3.44,
+      "end": 366.71999999999997
+    },
+    {
+      "text": "up, your prod database remains",
+      "start": 365.039,
+      "duration": 3.361,
+      "end": 368.4
+    },
+    {
+      "text": "completely untouched. It completely",
+      "start": 366.72,
+      "duration": 3.68,
+      "end": 370.40000000000003
+    },
+    {
+      "text": "changes how you handle dev and staging",
+      "start": 368.4,
+      "duration": 4.48,
+      "end": 372.88
+    },
+    {
+      "text": "environments. Plus, because Neon is true",
+      "start": 370.4,
+      "duration": 4.079,
+      "end": 374.479
+    },
+    {
+      "text": "serverless, it automatically scales",
+      "start": 372.88,
+      "duration": 3.12,
+      "end": 376.0
+    },
+    {
+      "text": "compute based on your application's",
+      "start": 374.479,
+      "duration": 3.521,
+      "end": 378.0
+    },
+    {
+      "text": "workload and scales down to zero when",
+      "start": 376.0,
+      "duration": 3.36,
+      "end": 379.36
+    },
+    {
+      "text": "it's not in use. You don't have to",
+      "start": 378.0,
+      "duration": 3.44,
+      "end": 381.44
+    },
+    {
+      "text": "overprovision servers, meaning you only",
+      "start": 379.36,
+      "duration": 4.16,
+      "end": 383.52000000000004
+    },
+    {
+      "text": "pay for exactly what you use. Whether",
+      "start": 381.44,
+      "duration": 3.84,
+      "end": 385.28
+    },
+    {
+      "text": "you're building a weekend side project",
+      "start": 383.52,
+      "duration": 4.399,
+      "end": 387.919
+    },
+    {
+      "text": "or a hightraic application, Neon makes",
+      "start": 385.28,
+      "duration": 4.8,
+      "end": 390.08
+    },
+    {
+      "text": "Postgress feel modern, fast, and",
+      "start": 387.919,
+      "duration": 3.521,
+      "end": 391.44
+    },
+    {
+      "text": "frictionless. Click the link in the",
+      "start": 390.08,
+      "duration": 2.8,
+      "end": 392.88
+    },
+    {
+      "text": "description to sign up and deploy your",
+      "start": 391.44,
+      "duration": 3.199,
+      "end": 394.639
+    },
+    {
+      "text": "first serverless Postgress database on",
+      "start": 392.88,
+      "duration": 4.24,
+      "end": 397.12
+    },
+    {
+      "text": "Neon for free in just seconds. A huge",
+      "start": 394.639,
+      "duration": 4.161,
+      "end": 398.8
+    },
+    {
+      "text": "thanks to Neon for sponsoring this",
+      "start": 397.12,
+      "duration": 3.919,
+      "end": 401.039
+    },
+    {
+      "text": "video. Now, back to even more Postgress.",
+      "start": 398.8,
+      "duration": 3.519,
+      "end": 402.319
+    },
+    {
+      "text": "If you're building applications that",
+      "start": 401.039,
+      "duration": 3.361,
+      "end": 404.4
+    },
+    {
+      "text": "rely heavily on maps or routing,",
+      "start": 402.319,
+      "duration": 4.32,
+      "end": 406.639
+    },
+    {
+      "text": "Postgress isn't just an alternative. It",
+      "start": 404.4,
+      "duration": 3.919,
+      "end": 408.31899999999996
+    },
+    {
+      "text": "is the undisputed industry gold",
+      "start": 406.639,
+      "duration": 3.761,
+      "end": 410.40000000000003
+    },
+    {
+      "text": "standard. The PostGIS extension",
+      "start": 408.319,
+      "duration": 3.921,
+      "end": 412.24
+    },
+    {
+      "text": "transforms Postgress into a spatial",
+      "start": 410.4,
+      "duration": 4.4,
+      "end": 414.79999999999995
+    },
+    {
+      "text": "powerhouse using the gist or generalized",
+      "start": 412.24,
+      "duration": 4.56,
+      "end": 416.8
+    },
+    {
+      "text": "search tree index. If you ask the",
+      "start": 414.8,
+      "duration": 4.08,
+      "end": 418.88
+    },
+    {
+      "text": "database to find all coffee shops within",
+      "start": 416.8,
+      "duration": 4.64,
+      "end": 421.44
+    },
+    {
+      "text": "a complex geographic polygon, doing raw",
+      "start": 418.88,
+      "duration": 4.24,
+      "end": 423.12
+    },
+    {
+      "text": "mathematical distance calculations on",
+      "start": 421.44,
+      "duration": 3.44,
+      "end": 424.88
+    },
+    {
+      "text": "every coordinate would crash the server.",
+      "start": 423.12,
+      "duration": 4.32,
+      "end": 427.44
+    },
+    {
+      "text": "Instead, a generalized search tree draws",
+      "start": 424.88,
+      "duration": 4.719,
+      "end": 429.599
+    },
+    {
+      "text": "simple overlapping bounding boxes around",
+      "start": 427.44,
+      "duration": 4.159,
+      "end": 431.599
+    },
+    {
+      "text": "your geographic shapes. The database",
+      "start": 429.599,
+      "duration": 4.0,
+      "end": 433.599
+    },
+    {
+      "text": "first checks these simple boxes",
+      "start": 431.599,
+      "duration": 3.761,
+      "end": 435.36
+    },
+    {
+      "text": "instantly discarding millions of data",
+      "start": 433.599,
+      "duration": 3.6,
+      "end": 437.199
+    },
+    {
+      "text": "points that aren't even close and only",
+      "start": 435.36,
+      "duration": 3.679,
+      "end": 439.039
+    },
+    {
+      "text": "performs the heavy precise geometric",
+      "start": 437.199,
+      "duration": 3.361,
+      "end": 440.56
+    },
+    {
+      "text": "math on the handful of points that",
+      "start": 439.039,
+      "duration": 3.44,
+      "end": 442.479
+    },
+    {
+      "text": "remain. This routinely outperforms",
+      "start": 440.56,
+      "duration": 4.24,
+      "end": 444.8
+    },
+    {
+      "text": "standalone GIS systems. On the other",
+      "start": 442.479,
+      "duration": 3.921,
+      "end": 446.4
+    },
+    {
+      "text": "hand, when handling massive volumes of",
+      "start": 444.8,
+      "duration": 3.679,
+      "end": 448.479
+    },
+    {
+      "text": "telemetry or event logs, developers",
+      "start": 446.4,
+      "duration": 4.0,
+      "end": 450.4
+    },
+    {
+      "text": "reach for time series databases.",
+      "start": 448.479,
+      "duration": 3.921,
+      "end": 452.4
+    },
+    {
+      "text": "Postgress handles this natively through",
+      "start": 450.4,
+      "duration": 4.16,
+      "end": 454.56
+    },
+    {
+      "text": "declarative partitioning and the highly",
+      "start": 452.4,
+      "duration": 5.28,
+      "end": 457.67999999999995
+    },
+    {
+      "text": "underutilized brin or block range index.",
+      "start": 454.56,
+      "duration": 4.96,
+      "end": 459.52
+    },
+    {
+      "text": "Instead of storing billions of logs in",
+      "start": 457.68,
+      "duration": 3.519,
+      "end": 461.199
+    },
+    {
+      "text": "one massive table, partitioning",
+      "start": 459.52,
+      "duration": 3.44,
+      "end": 462.96
+    },
+    {
+      "text": "transparently splits your data into",
+      "start": 461.199,
+      "duration": 3.921,
+      "end": 465.12
+    },
+    {
+      "text": "physical daily or monthly chunks. As",
+      "start": 462.96,
+      "duration": 3.519,
+      "end": 466.479
+    },
+    {
+      "text": "long as your logs are inserted",
+      "start": 465.12,
+      "duration": 3.28,
+      "end": 468.4
+    },
+    {
+      "text": "sequentially, the brin index is a",
+      "start": 466.479,
+      "duration": 3.761,
+      "end": 470.24
+    },
+    {
+      "text": "superpower. Instead of indexing every",
+      "start": 468.4,
+      "duration": 3.84,
+      "end": 472.23999999999995
+    },
+    {
+      "text": "single row like a massive bloated B",
+      "start": 470.24,
+      "duration": 3.76,
+      "end": 474.0
+    },
+    {
+      "text": "tree, it only stores the minimum and",
+      "start": 472.24,
+      "duration": 3.44,
+      "end": 475.68
+    },
+    {
+      "text": "maximum timestamps for physical blocks",
+      "start": 474.0,
+      "duration": 3.52,
+      "end": 477.52
+    },
+    {
+      "text": "of data on the disk. When you query for",
+      "start": 475.68,
+      "duration": 4.239,
+      "end": 479.919
+    },
+    {
+      "text": "a specific time range, Postgress reads",
+      "start": 477.52,
+      "duration": 4.959,
+      "end": 482.479
+    },
+    {
+      "text": "the brin index, instantly skips millions",
+      "start": 479.919,
+      "duration": 4.081,
+      "end": 484.0
+    },
+    {
+      "text": "of physical disk pages that don't",
+      "start": 482.479,
+      "duration": 3.28,
+      "end": 485.75899999999996
+    },
+    {
+      "text": "contain your target timestamps, and",
+      "start": 484.0,
+      "duration": 4.24,
+      "end": 488.24
+    },
+    {
+      "text": "scans only the tiny fraction that do.",
+      "start": 485.759,
+      "duration": 4.56,
+      "end": 490.319
+    },
+    {
+      "text": "How about for complex dashboards? The",
+      "start": 488.24,
+      "duration": 4.32,
+      "end": 492.56
+    },
+    {
+      "text": "knee-jerk reaction is to pipe data into",
+      "start": 490.319,
+      "duration": 3.921,
+      "end": 494.24
+    },
+    {
+      "text": "expensive data warehouses like",
+      "start": 492.56,
+      "duration": 3.28,
+      "end": 495.84
+    },
+    {
+      "text": "snowflake. You can bypass this by",
+      "start": 494.24,
+      "duration": 4.16,
+      "end": 498.40000000000003
+    },
+    {
+      "text": "leveraging Postgress materialized views.",
+      "start": 495.84,
+      "duration": 4.32,
+      "end": 500.15999999999997
+    },
+    {
+      "text": "A standard view runs its underlying",
+      "start": 498.4,
+      "duration": 3.76,
+      "end": 502.15999999999997
+    },
+    {
+      "text": "query from scratch every time a user",
+      "start": 500.16,
+      "duration": 3.68,
+      "end": 503.84000000000003
+    },
+    {
+      "text": "hits the dashboard, crashing your",
+      "start": 502.16,
+      "duration": 3.599,
+      "end": 505.759
+    },
+    {
+      "text": "database under load. A materialized view",
+      "start": 503.84,
+      "duration": 3.919,
+      "end": 507.75899999999996
+    },
+    {
+      "text": "runs the heavy aggregation just once and",
+      "start": 505.759,
+      "duration": 3.761,
+      "end": 509.52000000000004
+    },
+    {
+      "text": "physically saves that calculated result",
+      "start": 507.759,
+      "duration": 3.84,
+      "end": 511.599
+    },
+    {
+      "text": "to the disk. To prevent stale data,",
+      "start": 509.52,
+      "duration": 4.399,
+      "end": 513.919
+    },
+    {
+      "text": "Postgress uses the refresh materialized",
+      "start": 511.599,
+      "duration": 4.32,
+      "end": 515.919
+    },
+    {
+      "text": "view concurrently command provided your",
+      "start": 513.919,
+      "duration": 3.92,
+      "end": 517.8389999999999
+    },
+    {
+      "text": "view has a unique index. It calculates",
+      "start": 515.919,
+      "duration": 3.841,
+      "end": 519.76
+    },
+    {
+      "text": "the fresh analytics entirely in the",
+      "start": 517.839,
+      "duration": 4.0,
+      "end": 521.839
+    },
+    {
+      "text": "background, compares the differences and",
+      "start": 519.76,
+      "duration": 4.48,
+      "end": 524.24
+    },
+    {
+      "text": "seamlessly hot swaps the updated rows",
+      "start": 521.839,
+      "duration": 4.321,
+      "end": 526.1600000000001
+    },
+    {
+      "text": "into place without ever locking out your",
+      "start": 524.24,
+      "duration": 4.159,
+      "end": 528.399
+    },
+    {
+      "text": "end users. For years, we've blindly",
+      "start": 526.16,
+      "duration": 3.92,
+      "end": 530.0799999999999
+    },
+    {
+      "text": "accepted that you need to write and",
+      "start": 528.399,
+      "duration": 3.12,
+      "end": 531.519
+    },
+    {
+      "text": "maintain thousands of lines of",
+      "start": 530.08,
+      "duration": 3.759,
+      "end": 533.839
+    },
+    {
+      "text": "boilerplate Node.js JS or Python code",
+      "start": 531.519,
+      "duration": 4.0,
+      "end": 535.519
+    },
+    {
+      "text": "just to shuttle JSON between your",
+      "start": 533.839,
+      "duration": 3.281,
+      "end": 537.12
+    },
+    {
+      "text": "database and your front end. You can",
+      "start": 535.519,
+      "duration": 3.76,
+      "end": 539.279
+    },
+    {
+      "text": "incinerate this entire middleware layer",
+      "start": 537.12,
+      "duration": 5.04,
+      "end": 542.16
+    },
+    {
+      "text": "using tools like post REST or the PG",
+      "start": 539.279,
+      "duration": 4.881,
+      "end": 544.16
+    },
+    {
+      "text": "GraphQL extension. Instead of manually",
+      "start": 542.16,
+      "duration": 3.84,
+      "end": 546.0
+    },
+    {
+      "text": "writing a new controller and endpoint",
+      "start": 544.16,
+      "duration": 3.6,
+      "end": 547.76
+    },
+    {
+      "text": "every time you add a database table,",
+      "start": 546.0,
+      "duration": 3.6,
+      "end": 549.6
+    },
+    {
+      "text": "these tools analyze your schema and",
+      "start": 547.76,
+      "duration": 3.28,
+      "end": 551.04
+    },
+    {
+      "text": "automatically generate a fully",
+      "start": 549.6,
+      "duration": 3.52,
+      "end": 553.12
+    },
+    {
+      "text": "documented highly performant REST or",
+      "start": 551.04,
+      "duration": 4.56,
+      "end": 555.5999999999999
+    },
+    {
+      "text": "GraphQL API on the fly. And before you",
+      "start": 553.12,
+      "duration": 4.399,
+      "end": 557.519
+    },
+    {
+      "text": "panic about security, Postgress handles",
+      "start": 555.6,
+      "duration": 3.84,
+      "end": 559.44
+    },
+    {
+      "text": "that natively, too. By leveraging rowle",
+      "start": 557.519,
+      "duration": 3.361,
+      "end": 560.88
+    },
+    {
+      "text": "security, you can write strict",
+      "start": 559.44,
+      "duration": 3.2,
+      "end": 562.6400000000001
+    },
+    {
+      "text": "cryptographic policies directly in the",
+      "start": 560.88,
+      "duration": 3.84,
+      "end": 564.72
+    },
+    {
+      "text": "database that guarantee a user can only",
+      "start": 562.64,
+      "duration": 4.08,
+      "end": 566.72
+    },
+    {
+      "text": "ever read or write their own specific",
+      "start": 564.72,
+      "duration": 3.6,
+      "end": 568.32
+    },
+    {
+      "text": "rows based on their authentication",
+      "start": 566.72,
+      "duration": 3.679,
+      "end": 570.399
+    },
+    {
+      "text": "token. Your database securely becomes",
+      "start": 568.32,
+      "duration": 3.92,
+      "end": 572.24
+    },
+    {
+      "text": "your entire backend, eliminating the",
+      "start": 570.399,
+      "duration": 4.321,
+      "end": 574.72
+    },
+    {
+      "text": "need for a fleet of API servers. While",
+      "start": 572.24,
+      "duration": 4.32,
+      "end": 576.5600000000001
+    },
+    {
+      "text": "the just use Postgress philosophy is",
+      "start": 574.72,
+      "duration": 3.52,
+      "end": 578.24
+    },
+    {
+      "text": "incredibly powerful, you shouldn't",
+      "start": 576.56,
+      "duration": 3.6,
+      "end": 580.16
+    },
+    {
+      "text": "entirely abandon your critical thinking.",
+      "start": 578.24,
+      "duration": 3.76,
+      "end": 582.0
+    },
+    {
+      "text": "It isn't a silver bullet. Postgress",
+      "start": 580.16,
+      "duration": 3.52,
+      "end": 583.68
+    },
+    {
+      "text": "scales vertically with exceptional",
+      "start": 582.0,
+      "duration": 3.519,
+      "end": 585.519
+    },
+    {
+      "text": "grace, but horizontally sharding a",
+      "start": 583.68,
+      "duration": 3.68,
+      "end": 587.3599999999999
+    },
+    {
+      "text": "monolithic database to handle extreme",
+      "start": 585.519,
+      "duration": 3.841,
+      "end": 589.36
+    },
+    {
+      "text": "scale introduces immense complexity. If",
+      "start": 587.36,
+      "duration": 3.36,
+      "end": 590.72
+    },
+    {
+      "text": "your application actually needs to",
+      "start": 589.36,
+      "duration": 3.44,
+      "end": 592.8000000000001
+    },
+    {
+      "text": "ingest millions of telemetry events per",
+      "start": 590.72,
+      "duration": 4.08,
+      "end": 594.8000000000001
+    },
+    {
+      "text": "second or requires submillisecond",
+      "start": 592.8,
+      "duration": 3.68,
+      "end": 596.4799999999999
+    },
+    {
+      "text": "in-memory caching for millions of",
+      "start": 594.8,
+      "duration": 3.68,
+      "end": 598.4799999999999
+    },
+    {
+      "text": "concurrent websockets, you absolutely",
+      "start": 596.48,
+      "duration": 4.24,
+      "end": 600.72
+    },
+    {
+      "text": "must adopt specialized distributed",
+      "start": 598.48,
+      "duration": 4.4,
+      "end": 602.88
+    },
+    {
+      "text": "tools. However, until you cross that",
+      "start": 600.72,
+      "duration": 4.08,
+      "end": 604.8000000000001
+    },
+    {
+      "text": "threshold of massive enterprise scale,",
+      "start": 602.88,
+      "duration": 3.68,
+      "end": 606.56
+    },
+    {
+      "text": "leaning on the core battle tested",
+      "start": 604.8,
+      "duration": 3.28,
+      "end": 608.0799999999999
+    },
+    {
+      "text": "mechanics of Postgress to run your",
+      "start": 606.56,
+      "duration": 3.6,
+      "end": 610.16
+    },
+    {
+      "text": "entire stack is arguably the smartest",
+      "start": 608.08,
+      "duration": 3.84,
+      "end": 611.9200000000001
+    },
+    {
+      "text": "and most cost-effective engineering",
+      "start": 610.16,
+      "duration": 3.84,
+      "end": 614.0
+    },
+    {
+      "text": "decision you can make. Seriously, to",
+      "start": 611.92,
+      "duration": 3.68,
+      "end": 615.5999999999999
+    },
+    {
+      "text": "really level up as a software engineer,",
+      "start": 614.0,
+      "duration": 3.519,
+      "end": 617.519
+    },
+    {
+      "text": "you have to build hard things. That's",
+      "start": 615.6,
+      "duration": 3.76,
+      "end": 619.36
+    },
+    {
+      "text": "why I highly recommend Code Crafters.",
+      "start": 617.519,
+      "duration": 3.521,
+      "end": 621.04
+    },
+    {
+      "text": "Instead of building basic apps, they",
+      "start": 619.36,
+      "duration": 2.719,
+      "end": 622.0790000000001
+    },
+    {
+      "text": "guide you through building real",
+      "start": 621.04,
+      "duration": 2.56,
+      "end": 623.5999999999999
+    },
+    {
+      "text": "developer tooling from scratch. You'll",
+      "start": 622.079,
+      "duration": 2.88,
+      "end": 624.959
+    },
+    {
+      "text": "write your own working versions of",
+      "start": 623.6,
+      "duration": 3.679,
+      "end": 627.279
+    },
+    {
+      "text": "Reddus, Git, CFKA, Docker, and even",
+      "start": 624.959,
+      "duration": 4.32,
+      "end": 629.279
+    },
+    {
+      "text": "modern AI tools like Claude Code. It",
+      "start": 627.279,
+      "duration": 3.361,
+      "end": 630.64
+    },
+    {
+      "text": "completely changes how you understand",
+      "start": 629.279,
+      "duration": 3.041,
+      "end": 632.32
+    },
+    {
+      "text": "software. Check the description for a",
+      "start": 630.64,
+      "duration": 3.6,
+      "end": 634.24
+    },
+    {
+      "text": "link that automatically applies a 40%",
+      "start": 632.32,
+      "duration": 3.759,
+      "end": 636.0790000000001
+    },
+    {
+      "text": "discount to your account. Also in the",
+      "start": 634.24,
+      "duration": 3.039,
+      "end": 637.279
+    },
+    {
+      "text": "description is a link to my free",
+      "start": 636.079,
+      "duration": 2.88,
+      "end": 638.959
+    },
+    {
+      "text": "newsletter where I share exclusive deep",
+      "start": 637.279,
+      "duration": 3.441,
+      "end": 640.72
+    },
+    {
+      "text": "dives on system design and real world",
+      "start": 638.959,
+      "duration": 3.44,
+      "end": 642.399
+    },
+    {
+      "text": "backend development. The stuff you won't",
+      "start": 640.72,
+      "duration": 4.96,
+      "end": 645.6800000000001
+    },
+    {
+      "text": "find in basic coding tutorials.",
+      "start": 642.399,
+      "duration": 3.281,
+      "end": 645.68
+    }
+  ],
+  "frames": [],
+  "warnings": []
+}
